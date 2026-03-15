@@ -1,0 +1,56 @@
+#header { position:fixed; top:0; width:100%; background-color:#fff; height:100px; border-bottom:1px solid #666666; z-index:10; }
+#header .head_logo { position:absolute; left:150px; line-height:100px; }
+#header .head_logo img { vertical-align:middle; }
+
+#header .nav { overflow:hidden; }
+#header .nav ul { overflow:hidden; float:right; padding-right:90px; }
+#header .nav ul li { float:left; line-height:100px; padding:0 15px; font-size:20px; }
+#header .nav ul li:hover a { color:#5c5edf; transition:all .3s; }
+#header .nav ul li a { font-size:20px; }
+
+#header .lang_nav { position:absolute; right:150px; top:35px; }
+#header .lang_nav ul { overflow:hidden; }
+#header .lang_nav ul li { float:left; }
+#header .lang_nav ul li a { font-size:20px; color:#717171; }
+#header .lang_nav ul li.on a { font-family:'gmarket_b'; color:#5c5edf; }
+#header .lang_nav ul li:last-child::before { content:'|'; padding:0 10px; display:block; float:left; font-size:20px; color:#717171; }
+
+#header .menu_btn { display:none; position:absolute; top:20px; right:20px; }
+#header .back_btn { display:none; position:absolute; top:20px; right:-320px; }
+#header .back_btn.on { right:20px; }
+
+
+
+@media screen and (max-width:1700px) {
+
+  #header { height:80px; }
+
+  #header .head_logo { left:30px; line-height:80px; }
+  #header .head_logo img { width:120px; }
+  #header .lang_nav { right:30px; top:28px; }
+  #header .lang_nav ul li a { font-size:17px; }
+  #header .nav ul { width:auto; position:relative; display:inline-block; padding-right:160px;  }
+  #header .nav ul li{ padding:0 8px; line-height:80px; }
+  #header .nav ul li a { font-size:17px; }
+}
+@media screen and (max-width:1250px) {
+  #header .menu_btn { display:block; }
+  #header .back_btn { display:block; z-index:21; transition:all .2s; }
+  #header .back_btn.on { right:20px; transition:all .2s; }
+
+  #header .nav { background-color:#fff; width:400px; position:fixed; right:-130%; height:100vh; z-index:20; transition:all .2s; }
+  #header .nav.on { right:0px; transition:all .2s; }
+  #header .nav ul { top:120px; }
+  #header .nav ul li { float:initial; line-height:50px; }
+  #header .lang_nav { top:80px; z-index:21; right:-320px; transition:all .2s; }
+  #header .lang_nav.on { right:30px; transition:all .2s; }
+
+}
+@media screen and (max-width:501px) {
+  #header { height:60px; }
+  #header .nav.on { right:-160px; }
+  #header .head_logo { left:15px; line-height:60px; }
+  #header .head_logo img { width:90px; }
+  #header .menu_btn { top:13px; right:15px; }
+  #header .back_btn.on { right:15px; top:13px; }
+}

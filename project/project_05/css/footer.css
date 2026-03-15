@@ -1,0 +1,15 @@
+#foot { background-color:#333333; padding:60px 0; }
+#foot .foot_sns ul { overflow:hidden; margin:0 auto; width:350px; }
+#foot .foot_sns ul li { float:left; padding:0 5px; }
+#foot p { font-size:20px; color:#fff; font-weight:200; text-align:center; padding-top:20px; }
+
+
+@media screen and (max-width:770px) {
+  #foot { padding:30px 0; }
+  #foot p { font-size:15px; }
+  #foot .foot_sns ul { width:250px; }
+  #foot .foot_sns ul li { width:40px; }
+}
+@media screen and (max-width:501px) {
+  #foot p { font-size:12px; }
+}

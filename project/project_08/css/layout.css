@@ -1,0 +1,514 @@
+.wrap { width:1400px; margin:0 auto; }
+
+.up-on-scroll { opacity:0; transform:translateY(150px); transition-duration:1s; }
+.up-on-scroll.on { opacity:1; transform:translateY(0px); padding-top:0; }
+.upon { transition-delay:0s; }
+.upon_2 { transition-delay:.3s; }
+.upon_3 { transition-delay:.6s; }
+.upon_4 { transition-delay:.9s; }
+.upon_5 { transition-delay:1.2s; }
+.upon_6 { transition-delay:1.5s; }
+.upon_7 { transition-delay:1.8s; }
+.upon_7 { transition-delay:2.1s; }
+
+#float_btn { opacity:0; transition:all .3s; }
+#float_btn.on { opacity:0; transition:all .3s; }
+#float_btn.plus { opacity:1; transition:all .3s; }
+#float_btn.plus.on { bottom:160px; transition:all .3s; }
+.float_btn { position:fixed; right:50px; bottom:30px; z-index:50; }
+.float_btn ul li { margin-bottom:20px; }
+
+/*공통*/
+#main .title { text-align:center; padding:120px 0 60px; }
+#main .title h5 { font-size:16px; font-weight:500; color:#fff; background-color:#424dd3; padding:0 10px 2px; display:inline-block; }
+#main .title h1 { font-size:45px; font-weight:600; color:#000; }
+#main .title h1 span { color:#424dd3; }
+
+/*헤더*/
+#header { border-bottom:1px solid #cacaca; position:fixed; top:0; right:0; left:0; background-color:#fff; z-index:100; }
+#header .wrap { overflow:hidden; }
+#header .logo { display:inline-block; line-height:80px; float:left; }
+#header .logo img { vertical-align:middle; }
+#header .mo_menu { display:none; }
+#header .mo_back { display:none; }
+#header .menu { display:inline-block; position:absolute; left:50%; transform:translate(-50%,0); }
+#header .menu ul { overflow:hidden; }
+#header .menu ul li { float:left; }
+#header .menu ul li a { font-size:20px; font-weight:500; margin:0 15px; line-height:80px; }
+#header .menu_lang { display:inline-block; float:right; }
+#header .menu_lang ul li { float:left; }
+#header .menu_lang ul li.line { width:1px; height:20px; background-color:#cacaca; margin:30px 20px 0; vertical-align:middle; }
+#header .menu_lang ul li a { font-size:20px; font-weight:500; line-height:80px; }
+#header .menu_lang ul li.on a { font-weight:700; color:#424dd3; }
+
+/*visual*/
+#main .visual { background-image:url('../img/visual_bg.png'); background-repeat:no-repeat; background-size:cover; background-position:center center; padding-top:81px; }
+#main .visual .wrap { text-align:center; }
+#main .visual .visual_tit { padding-top:170px; }
+#main .visual .visual_tit p { color:#fff; font-size:30px; letter-spacing:-1px; padding:20px 0; }
+#main .visual .whitepaper ul { overflow:hidden; display:inline-block; text-align:center; }
+#main .visual .whitepaper ul li { float:left; border:2px solid #fff; border-radius:10px; margin:0 20px; transition:all .3s; }
+#main .visual .whitepaper ul li:hover { background-color:#424dd3; border:2px solid #424dd3; transition:all .3s; }
+#main .visual .whitepaper ul li a { padding:15px 140px; display:block; }
+#main .visual .whitepaper ul li a .btn { overflow:hidden; }
+#main .visual .whitepaper ul li a .btn h4 { float:left; padding-right:10px; font-size:22px; font-weight:500; color:#fff; }
+#main .visual .whitepaper ul li a .btn img { float:left; padding-top:7px; }
+#main .visual .scroll_down { text-align:center; padding:200px 0 60px; display:inline-block; }
+#main .visual .scroll_down .mouse { width:30px; height:50px; border:1px solid #fff; border-radius:15px; margin:0 auto; }
+#main .visual .scroll_down .mouse .ball { width:7px; height:7px; background-color:#fff; border-radius:30px; margin:10px auto 0; animation-duration:1.5s; animation-iteration-count:infinite; animation-name:scroll; }
+  @keyframes scroll {
+    0% { opacity:1; }
+    100% { opacity:0; transform:translateY(24px); }
+  }
+#main .visual .scroll_down p { font-size:16px; font-weight:500; color:#fff; padding-top:20px; }
+
+/*knom*/
+#main .knom .knom_cont { overflow:hidden; padding-bottom:80px; }
+#main .knom .knom_cont .cont_left { float:left; width:48%; text-align:center; padding-top:50px; }
+#main .knom .knom_cont .cont_right { float:left; width:50%; }
+#main .knom .knom_cont .cont_right.ko { float:left; width:52%; }
+#main .knom .knom_cont .cont_right ul li { padding-bottom:40px; }
+#main .knom .knom_cont .cont_right ul li .knomlist_tit { overflow:hidden; }
+#main .knom .knom_cont .cont_right ul li .knomlist_tit img { float:left; padding-right:10px; }
+#main .knom .knom_cont .cont_right ul li .knomlist_tit h2 { float:left; font-size:25px; font-weight:600; color:#424dd3; margin-top:-8px; }
+#main .knom .knom_cont .cont_right ul li p { font-size:20px; line-height:25px; }
+
+/*project*/
+#main .project { background-color:#eeeeee; padding-bottom:120px; }
+#main .project .project_cont { text-align:center; }
+#main .project .project_cont .cont_top p { font-size:25px; font-weight:500; padding-top:20px; word-break:keep-all; }
+#main .project .project_cont .cont_top p span { color:#424dd3; }
+#main .project .project_cont .cont_bottom { padding-top:110px; }
+#main .project .project_cont .cont_bottom p { font-size:25px; font-weight:500; color:#000; letter-spacing:-2px; }
+#main .project .project_cont .cont_bottom p sup { font-weight:200; }
+#main .project .project_cont .cont_bottom p .blue { color:#424dd3; }
+#main .project .project_cont .cont_bottom h3 { font-size:35px; font-weight:500; padding-bottom:40px; }
+#main .project .project_cont .cont_bottom h3 span { color:#424dd3; }
+#main .project .project_cont .cont_bottom .protocol_checklist { width:100%; background-color:#fff; margin-bottom:15px; }
+#main .project .project_cont .cont_bottom .protocol_checklist ul { padding:30px 0; overflow:hidden; display:inline-block; }
+#main .project .project_cont .cont_bottom .protocol_checklist ul li { float:left; overflow:hidden; }
+#main .project .project_cont .cont_bottom .protocol_checklist ul li input { position:absolute; opacity:0; }
+#main .project .project_cont .cont_bottom .protocol_checklist ul li input[type="checkbox"] + label { background-image:url('../img/checkbox.png'); background-repeat: no-repeat; background-position:left 50%; padding:0px 110px 0px 30px; }
+#main .project .project_cont .cont_bottom .protocol_checklist ul li input[type="checkbox"] + label.last { padding:0px 0px 0px 30px; }
+#main .project .project_cont .cont_bottom .protocol_checklist ul li input[type="checkbox"]:checked + label { background-image:url('../img/checkbox_checked.png'); }
+#main .project .project_cont .cont_bottom .protocol_checklist ul li label { font-size:20px; font-weight:200; color:#000;}
+
+
+/*flatform*/
+#main .flatform .flatform_cont ul li { overflow:hidden; }
+#main .flatform .flatform_cont ul li .gray { background-color:#eeeeee; }
+#main .flatform .flatform_cont ul li .cont_left { float:left; width:50%; text-align:center; height:310px; }
+#main .flatform .flatform_cont ul li .cont_right { float:left; width:50%; text-align:center; height:310px; }
+#main .flatform .flatform_cont ul li .ff_txt { position:relative; top:50%; transform:translate(0,-50%); }
+#main .flatform .flatform_cont ul li img { position:relative; top:50%; transform:translate(0,-50%); }
+#main .flatform .flatform_cont ul li .ff_txt h3 { font-size:20px; font-weight:600; color:#424dd3; }
+#main .flatform .flatform_cont ul li .ff_txt h1 { font-size:28px; font-weight:600; color:#000; }
+#main .flatform .flatform_cont ul li .ff_txt h1 span { color:#424dd3; }
+#main .flatform .flatform_cont ul li .ff_txt p { color:#000; font-size:20px; line-height:25px; font-weight:400; padding-top:10px; }
+#main .flatform .flatform_cont ul li .ff_txt.en p { font-size:17px; }
+
+/*flatform02*/
+#main .flatform02_cont { overflow:hidden; }
+#main .flatform02_cont .cont_left { float:left; width:590px; position:relative; margin-left:170px; }
+#main .flatform02_cont .cont_left::before { content:''; display:block; background-image:url('../img/point_prev.png'); background-repeat:no-repeat; background-size:cover; width:33px; height:27px; position:absolute; }
+#main .flatform02_cont .cont_left::after { content:''; display:block; background-image:url('../img/point_next.png'); background-repeat:no-repeat; background-size:cover; width:33px; height:27px; float:right; margin-top:-27px; }
+#main .flatform02_cont .cont_left .swiper-container .swiper-wrapper { height:122px !important; }
+#main .flatform02_cont .cont_left .swiper-container .swiper-wrapper .swiper-slide { font-family:'s-core'; font-weight:600; color:#424dd3; font-size:40px; text-align:center; line-height:122px; }
+
+#main .flatform02_cont .cont_right { float:left; width:calc(100% - 860px); padding-left:100px; }
+#main .flatform02_cont .cont_right.en { width:calc(100% - 850px); padding-left:90px; }
+#main .flatform02_cont .cont_right h3 { font-size:25px; font-weight:500; }
+#main .flatform02_cont .cont_right h3 span { color:#424dd3; }
+#main .flatform02_cont .cont_right p { font-size:20px; font-weight:200; line-height:30px; padding-top:10px; }
+
+/*flatform03*/
+#main .floatform03_mo { display:none; }
+#main .flatform03 { padding-bottom:120px; }
+#main .flatform03 .flatform03_cont ul { overflow:hidden; }
+#main .flatform03 .flatform03_cont ul .openmall_left { float:left; width:34.5%; }
+#main .flatform03 .flatform03_cont ul .openmall_center { float:left; padding:0 125px; position:relative; top:50%; transform:translate(0,50%); }
+#main .flatform03 .flatform03_cont ul .openmall_center.en { transform:translate(0,35%); }
+
+#main .flatform03 .flatform03_cont ul .openmall_right { float:left; width:34.5%; }
+#main .flatform03 .flatform03_cont ul .openmall_left ul li { background-color:#eeeeee; margin-bottom:10px; padding:25px 30px; border-radius:10px; height:60px; }
+#main .flatform03 .flatform03_cont ul .openmall_left ul li p { font-size:20px; color:#000; font-weight:200; line-height:30px; text-align:right; position:relative; top:50%; transform:translate(0,-50%); }
+#main .flatform03 .flatform03_cont ul .openmall_left ul li p .blue { font-weight:600; color:#424dd3; }
+#main .flatform03 .flatform03_cont ul .openmall_right ul li { background-color:#eeeeee; margin-bottom:10px; padding:25px 30px; border-radius:10px; }
+#main .flatform03 .flatform03_cont ul .openmall_right ul li p { font-size:20px; color:#000; font-weight:200; line-height:30px; text-align:left; }
+#main .flatform03 .flatform03_cont ul .openmall_right ul li p .blue { font-weight:600; color:#424dd3; }
+
+/*ecosystem*/
+#main .ecosystem { background-color:#eeeeee; }
+#main .ecosystem .ecosystem_cont { text-align:center; }
+#main .ecosystem .ecosystem_cont h3 { font-size:30px; font-weight:600; }
+#main .ecosystem .ecosystem_cont h3 .blue { color:#424dd3; }
+#main .ecosystem .ecosystem_cont .ecosystem_swip .swiper-container .swiper-wrapper { padding:20px 0 30px; }
+#main .ecosystem .ecosystem_cont .ecosystem_swip .swiper-container .swiper-wrapper .swiper-slide { width:18%; margin:0 1%;}
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction { bottom:0 !important; }
+  .swiper-pagination-bullet-active { background-color:#8441ff !important; }
+
+#main .ecosystem .ecosystem_coin { overflow:hidden; padding-top:90px; }
+#main .ecosystem .ecosystem_coin .cont_left { float:left; }
+#main .ecosystem .ecosystem_coin .cont_right { float:left; width:48%; padding-left:20px; }
+#main .ecosystem .ecosystem_coin .cont_right h2 { font-size:30px; font-weight:600; color:#000; }
+#main .ecosystem .ecosystem_coin .cont_right h2 span{ color:#424dd3; }
+#main .ecosystem .ecosystem_coin .cont_right ul li .coin_chart { overflow:hidden; margin-bottom:2px; }
+#main .ecosystem .ecosystem_coin .cont_right ul li .coin_chart .chart_tit { float:left; font-size:25px; font-weight:500; background-color:#424dd3; color:#fff; padding:15px 0; width:270px; text-align:center; margin-right:2px; }
+#main .ecosystem .ecosystem_coin .cont_right ul li .coin_chart .chart_txt { float:left; font-size:20px; font-weight:400; text-align:center; background-color:#fff; width:calc(100% - 272px); padding:19px 0; }
+#main .ecosystem .ecosystem_tokeneconomy { text-align:center; padding:60px 0 120px; }
+#main .ecosystem .ecosystem_tokeneconomy ul { overflow:hidden; display:inline-block; }
+#main .ecosystem .ecosystem_tokeneconomy ul .token_tit { float:left; text-align:center; }
+#main .ecosystem .ecosystem_tokeneconomy ul .token_tit h2 { font-size:30px; font-weight:600; letter-spacing:-2px; }
+#main .ecosystem .ecosystem_tokeneconomy ul .token_tit h2 span { color:#424dd3; }
+#main .ecosystem .ecosystem_tokeneconomy ul .token_tit p { font-size:25px; font-weight:500; letter-spacing:-2px; }
+#main .ecosystem .ecosystem_tokeneconomy ul .token_tit p span { color:#424dd3; }
+#main .ecosystem .ecosystem_tokeneconomy ul .line { background-color:#000; width:2px; height:49px; float:left; margin:20px 100px 0 60px; }
+#main .ecosystem .ecosystem_tokeneconomy ul .token_txt { float:left; }
+#main .ecosystem .ecosystem_tokeneconomy ul .token_txt p { font-size:20px; line-height:30px; font-weight:200; padding-top:10px; text-align:left; }
+#main .ecosystem .ecosystem_tokeneconomy ul .token_txt.en { width:64%; }
+
+/*partners*/
+#main .partners { position:relative; padding-bottom:120px; }
+#main .partners .partners_cont ul { overflow:hidden; padding-top:0; }
+#main .partners .partners_cont ul li { float:left; width:450px; margin:130px 8px 0; text-align:center; height:565px; background-color:#fff; border-radius:15px; position:relative; }
+#main .partners .partners_cont ul li img { position:absolute; left:50%; transform:translate(-50%,0); top:-90px; }
+#main .partners .partners_cont ul li h5 { font-size:15px; font-weight:600; padding-top:120px; color:#424dd3; }
+#main .partners .partners_cont ul li h1 { font-size:30px; font-weight:600; padding:0px 0 20px; }
+#main .partners .partners_cont ul li p { font-size:17px; font-weight:200; line-height:22px; padding:0 10px; word-break:keep-all; }
+#main .partners .part_bg { background-color:#eeeeee; position:absolute; bottom:0; z-index:-1; width:100%; height:85%; }
+#main .partners .part_bg.en { height:80%; }
+#main .partners .swip_logo { background-color:#fff; margin:60px 0 0; }
+#main .partners .swip_logo .swiper-container .swiper-wrapper .swiper-slide { width:18%; margin:45px 1%; }
+
+#main .partners .partners_cont.en ul li { height:710px; }
+
+/*roadmap*/
+#main .roadmap { padding-bottom:120px; }
+#main .roadmap ul { overflow:hidden; }
+#main .roadmap ul .roadmap_list { width:29.33%; margin:0 2%; float:left; }
+#main .roadmap ul li .map_tit ul li { font-size:35px; font-weight:600; float:left; padding-right:19px; }
+#main .roadmap ul li .map_tit ul .line { height:2px; width:calc(100% - 120px); margin-top:25px; }
+#main .roadmap ul li .map_cont .map_list { overflow:hidden; }
+#main .roadmap ul li .map_cont ul>li { margin-top:20px; }
+#main .roadmap ul li .map_cont .map_list .month { font-size:20px; font-weight:600; padding:8px 10px 9px; border-radius:30px; color:#fff; margin-right:15px; }
+#main .roadmap ul li .map_cont .map_list li { float:left; font-size:20px; font-weight:400; padding-top:10px; margin-top:0; }
+#main .roadmap ul li .map_cont .map_list li.en { width:calc(100% - 64px); }
+#main .roadmap ul .maplist_01 .map_tit ul .line { background-color:#8b91e1; }
+#main .roadmap ul .maplist_01 .map_tit ul li { color:#8b91e1; }
+#main .roadmap ul .maplist_02 .map_tit ul li { color:#727be7; }
+#main .roadmap ul .maplist_03 .map_tit ul li { color:#424dd3; }
+#main .roadmap ul .maplist_01 .map_cont ul li .map_list .month { background-color:#8b91e1; }
+#main .roadmap ul .maplist_02 .map_cont ul li .map_list .month { background-color:#727be7; }
+#main .roadmap ul .maplist_03 .map_cont ul li .map_list .month { background-color:#424dd3; padding:10px 7px 10px; }
+#main .roadmap ul .maplist_02 .map_tit ul .line { background-color:#727be7; }
+#main .roadmap ul .maplist_03 .map_tit ul .line { background-color:#424dd3; }
+
+/*contact*/
+#main .contactus { background-image:url('../img/contact_bg.png'); background-position:center center; background-repeat:no-repeat; padding:120px 0 119px; background-size:cover; }
+#main .contactus .cont_all { overflow:hidden; }
+#main .contactus .cont_all .cont_left { float:left; width:50%; position:relative; }
+#main .contactus .cont_all .cont_right { float:left; width:50%; overflow:hidden; }
+#main .contactus .cont_all .cont_right ul { overflow:hidden; }
+#main .contactus .cont_all .cont_right ul li { float:left; width:calc(50% - 10px); margin-left:10px;  }
+#main .contactus .cont_all .cont_right ul li input { width:100%; font-size:25px; font-weight:400; padding:20px 10px; border:none; font-size:20px; }
+#main .contactus .cont_all .cont_right ul li input::placeholder { color:#666666; font-weight:400; }
+#main .contactus .cont_all .cont_right textarea { width:calc(100% - 10px); margin-top:10px; float:right; font-size:20px; box-sizing:border-box; padding:10px; height:250px; border:none; overflow:auto; }
+#main .contactus .cont_all .cont_right button { width:calc(100% - 10px); font-size:25px; font-weight:600; color:#424dd3; float:right; text-align:center; padding:15px 0; margin-top:10px; background-color:#fff; }
+
+#footer { background-color:#333333; padding:30px 0; }
+#footer .footer_cont { overflow:hidden; }
+#footer .footer_cont .cont_left { float:left; line-height:100px; }
+#footer .footer_cont .cont_left img { vertical-align:middle; }
+#footer .footer_cont .cont_right { float:right; }
+#footer .footer_cont .cont_right p { font-size:15px; color:#fff; line-height:20px; text-align:right; font-weight:200; }
+
+
+@media screen and (max-width:1700px) {
+  #header .menu { left:30%; transform:translate(-20%,0); }
+
+
+}
+@media screen and (max-width:1400px) {
+  .wrap { width:auto; padding:0 20px; }
+
+  #main .knom .knom_cont .cont_right { width:50%; }
+  #main .knom .knom_cont .cont_right.ko { width:50%; }
+  #main .knom .knom_cont .cont_right ul li p { word-break:keep-all; }
+  #main .knom .knom_cont .cont_right ul li p br { display:none; }
+
+  #main .flatform02_cont .cont_left { margin-left:0; }
+  #main .flatform02_cont .cont_right { width:calc(100% - 690px); }
+  #main .flatform02_cont .cont_right.en { width:calc(100% - 680px); }
+
+  #main .flatform03 .flatform03_cont ul .openmall_left { width:32%; }
+  #main .flatform03 .flatform03_cont ul .openmall_right { width:32%; }
+  #main .flatform03 .flatform03_cont ul .openmall_right ul li p { font-size:18px; }
+  #main .flatform03 .flatform03_cont ul .openmall_left ul li p { font-size:18px; }
+
+  #main .project .project_cont .cont_bottom .protocol_checklist.en ul li label { font-size:15px; }
+  #main .project .project_cont .cont_bottom .protocol_checklist.en ul li input[type="checkbox"] + label { padding:0px 20px 0px 30px; }
+
+  #main .ecosystem .ecosystem_coin .cont_left { width:50%; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_txt.en { width:62%; }
+
+  #main .partners .partners_cont ul li { width:29.33%; margin:130px 2% 0; height:615px; }
+  #main .partners .partners_cont.en ul li { height:780px; }
+
+}
+@media screen and (max-width:1251px) {
+  #header .menu ul li a { font-size:16px;}
+  #header .menu_lang ul li a { font-size:16px;}
+
+  #main .title { padding:80px 0 30px; }
+  #main .title h1 { font-size:35px; }
+
+  #main .visual .whitepaper ul li a { padding:15px 111px; }
+  #main .visual .scroll_down { padding:50px 0 20px; }
+  #main .visual .scroll_down p { padding-top:0; }
+
+  #main .knom .knom_cont .cont_left { padding-right:2%; }
+
+  #main .project .project_cont .cont_bottom .protocol_checklist ul li input[type="checkbox"] + label { padding:0px 40px 0px 30px; }
+  #main .project .project_cont .cont_bottom p { letter-spacing:-1px; font-size:20px; }
+
+  #main .flatform .flatform_cont ul li .ff_txt h1 { font-size:23px; }
+  #main .flatform .flatform_cont ul li .ff_txt p { font-size:15px; line-height:20px; padding-top:5px; }
+
+  #main .flatform02_cont .cont_left { width:450px; }
+  #main .flatform02_cont .cont_left .swiper-container .swiper-wrapper .swiper-slide { font-size:30px; line-height:80px; }
+  #main .flatform02_cont .cont_left::before { width:20px; height:16px; }
+  #main .flatform02_cont .cont_left::after { width:20px; height:16px; }
+  #main .flatform02_cont .cont_right { padding-left:50px; width:calc(100% - 500px); }
+  #main .flatform02_cont .cont_right.en { width:calc(100% - 540px); }
+  #main .flatform02_cont .cont_right h3 { font-size:22px; }
+  #main .flatform02_cont .cont_right p { font-size:15px; line-height:20px; }
+
+  #main .flatform03 .flatform03_cont ul .openmall_left ul li { padding:20px 15px; height:40px; }
+  #main .flatform03 .flatform03_cont ul .openmall_left ul li p { font-size:15px; line-height:20px; }
+  #main .flatform03 .flatform03_cont ul .openmall_center { padding:0 85px; transform:translate(0,20%); }
+  #main .flatform03 .flatform03_cont ul .openmall_center.en { transform:translate(0,0); }
+  #main .flatform03 .flatform03_cont ul .openmall_right ul li { padding:20px 15px; }
+  #main .flatform03 .flatform03_cont ul .openmall_right ul li p { font-size:15px; line-height:20px; }
+
+  #main .ecosystem .ecosystem_cont h3 { font-size:25px; }
+  #main .ecosystem .ecosystem_coin { padding-top:60px; }
+  #main .ecosystem .ecosystem_coin .cont_right { width:47%; }
+  #main .ecosystem .ecosystem_coin .cont_right h2 { font-size:22px; }
+  #main .ecosystem .ecosystem_coin .cont_right ul li .coin_chart .chart_tit { font-size:20px; width:170px; }
+  #main .ecosystem .ecosystem_coin .cont_right ul li .coin_chart .chart_txt { font-size:16px; padding:17.5px 0; width:calc(100% - 172px); }
+  #main .ecosystem .ecosystem_coin .cont_right ul li .coin_chart .chart_txt.en { padding:32px 0; }
+  #main .ecosystem .ecosystem_tokeneconomy { padding:40px 0 120px; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .line { margin:20px 50px 0 20px; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_txt.en { width:59%; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_txt.en p { padding-top:0px; }
+
+
+  #main .partners .partners_cont ul li { height:595px; }
+  #main .partners .partners_cont ul li p { font-size:15px; line-height:20px; }
+
+  #main .contactus { padding:60px 0; }
+  #main .contactus .cont_all .cont_left { display:none; }
+  #main .contactus .cont_all .cont_right { float:initial; width:100%; }
+  #main .contactus .cont_all .cont_right button { font-size:17px; }
+  #main .contactus .cont_all .cont_right ul li input { padding:10px; }
+
+  .float_btn { right:20px; }
+  .float_btn ul li { margin-top:10px; }
+}
+@media screen and (max-width:1024px) {
+  #main .title { padding:60px 0 20px; }
+
+  #header .mo_back { display:block; position:absolute; right:-100%; line-height:80px; z-index:105; transition:all .3s; }
+  #header .mo_back.on { right:20px; transition:all .3s; }
+  #header .mo_back img { vertical-align:middle; }
+  #header .mo_menu { display:block; position:absolute; right:20px; line-height:80px; }
+  #header .mo_menu img { vertical-align:middle; }
+  #header .menu { left:auto; transform:none; background-color:#fff; padding:130px 90px 80px 20px; height:100vh; right:-100%; z-index:100; transition:all .3s; border-left:1px solid #eeeeee; }
+  #header .menu.on { right:0; transition:all .3s; }
+  #header .menu ul li { float:initial; }
+  #header .menu ul li a { line-height:50px; }
+  #header .menu_lang { float:initial; position:absolute; right:-100%; top:60px; z-index:110; transition:all .3s; }
+  #header .menu_lang.on { right:110px; transition:all .3s; }
+
+  #main .visual .whitepaper ul li a { padding:15px 48px; }
+  #main .visual .whitepaper ul li a .btn h4 { font-size:18px; }
+  #main .visual .whitepaper ul li a .btn img { padding-top:3px; }
+  #main .visual .visual_tit { padding-top:80px; }
+  #main .visual .visual_tit img { width:350px; }
+  #main .visual .visual_tit p { font-size:23px; }
+  #main .visual .scroll_down { padding:70px 0 20px; }
+
+  #main .knom .knom_cont { padding-bottom:60px; }
+  #main .knom .knom_cont .cont_left { float:initial; width:100%; padding:0; }
+  #main .knom .knom_cont .cont_right { float:initial; width:100%; padding-top:50px; }
+  #main .knom .knom_cont .cont_right.ko { float:initial; width:100%; padding-top:50px; }
+  #main .knom .knom_cont .cont_right ul li .knomlist_tit h2 { font-size:23px; }
+  #main .knom .knom_cont .cont_right ul li p { font-size:17px; }
+
+  #main .project .project_cont .cont_top p { font-size:20px; }
+  #main .project .project_cont .cont_bottom { padding-top:60px; }
+  #main .project .project_cont .cont_bottom h3 { font-size:25px; padding-bottom:20px; }
+  #main .project .project_cont .cont_bottom .protocol_checklist ul li label { font-size:15px; }
+  #main .project .project_cont .cont_bottom .protocol_checklist ul li input[type="checkbox"] + label { padding:0px 20px 0px 30px; }
+  #main .project .project_cont .cont_bottom .protocol_checklist.en ul li input[type="checkbox"] + label { padding:0px 5px 0px 25px; }
+  #main .project .project_cont .cont_bottom p { font-size:18px; }
+  #main .project { padding-bottom:80px; }
+
+  #main .flatform .flatform_cont ul li .cont_left { height:230px; }
+  #main .flatform .flatform_cont ul li .cont_right { height:230px; }
+  #main .flatform .flatform_cont ul li .ff_txt p { font-size:13px; line-height:17px; }
+  #main .flatform .flatform_cont ul li .ff_txt h1 { font-size:20px; }
+  #main .flatform .flatform_cont ul li img { width:250px; }
+
+  #main .flatform02_cont .cont_left { width:450px; padding-top:25px; }
+  #main .flatform02_cont .cont_left .swiper-container .swiper-wrapper { height:60px !important; }
+  #main .flatform02_cont .cont_left .swiper-container .swiper-wrapper .swiper-slide { line-height:60px; font-size:25px; }
+  #main .flatform02_cont .cont_right { padding-left:30px; width:calc(100% - 350px); }
+
+  #main .flatform03 .flatform03_cont ul .openmall_left { width:100%; float:initial; }
+  #main .flatform03 .flatform03_cont ul .openmall_left ul li p { text-align:center; }
+  #main .flatform03 .flatform03_cont ul .openmall_center { width:100%; float:initial; text-align:center; left:auto; transform:none; padding:40px 0; }
+  #main .flatform03 .flatform03_cont ul .openmall_right { width:100%; float:initial; }
+  #main .flatform03 .flatform03_cont ul .openmall_right ul li p { text-align:center; }
+
+  #main .ecosystem .ecosystem_cont .ecosystem_swip .swiper-container .swiper-wrapper .swiper-slide { width:29.33%; margin:0 2%; }
+  #main .ecosystem .ecosystem_coin .cont_left { float:initial; width:100%; padding-bottom:30px; text-align:center; }
+  #main .ecosystem .ecosystem_coin .cont_right { float:initial; width:100%; }
+  #main .ecosystem .ecosystem_tokeneconomy { padding:40px 0 80px; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_tit h2 { font-size:20px; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_tit p { font-size:17px; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_txt p { font-size:15px; line-height:20px; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .line { margin:5px 50px 0 20px; }
+
+  #main .partners .partners_cont ul li { width:100%; height:auto; }
+  #main .partners .partners_cont.en ul li { height:auto; }
+  #main .partners .partners_cont ul li p { padding:0 20px 20px; }
+  #main .partners .part_bg { height:90%; }
+  #main .partners .swip_logo .swiper-container .swiper-wrapper .swiper-slide { width:29.33%; margin:30px 2%; }
+
+  #main .roadmap ul .roadmap_list { width:100%; margin:0; padding:30px 0; }
+
+
+}
+@media screen and (max-width:770px) {
+  #main .title h5 { font-size:12px; }
+  #main .title h1 { font-size:25px; }
+
+  #header .logo { line-height:60px; }
+  #header .mo_menu { line-height:60px; }
+  #header .mo_back { line-height:60px; }
+  #header .logo img { width:80px; }
+
+  #main .visual .visual_tit img { width:270px; }
+  #main .visual .whitepaper ul li { float:initial; margin:20px 0; margin:5px 0; }
+  #main .visual .whitepaper ul li a { padding:10px 30px; }
+
+  #main .knom .knom_cont .cont_right ul li { padding-bottom:20px; }
+  #main .knom .knom_cont .cont_right ul li .knomlist_tit h2 { font-size:20px; margin-top:-4px; }
+  #main .knom .knom_cont .cont_right ul li p { font-size:15px; }
+
+  #main .project .project_cont .cont_bottom .protocol_checklist ul li { float:initial; margin:10px 0; }
+  #main .project .project_cont .cont_bottom p { font-size:15px; word-break:keep-all; }
+
+  #main .flatform .flatform_cont ul li img { width:150px; }
+
+  #main .flatform .flatform_cont ul li .cont_left { float:initial; width:100%; }
+  #main .flatform .flatform_cont ul li .cont_right { float:initial; width:100%; }
+  #main .flatform .flatform_cont ul li .mo { display:none; }
+
+  #main .flatform02_cont .cont_left { float:initial; width:100%; padding-top:0; }
+  #main .flatform02_cont .cont_right { float:initial; width:100%; text-align:center; padding-left:0; padding-top:10px; }
+  #main .flatform02_cont .cont_right.en { float:initial; width:100%; text-align:center; padding-left:0; padding-top:10px; }
+  #main .flatform03 { padding-bottom:60px; }
+  #main .flatform03 .flatform03_cont ul .openmall_center.en { transform:translate(0,0); }
+
+
+  #main .ecosystem .ecosystem_tokeneconomy { padding:20px 0 60px; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .line { margin:5px 20px 0 20px; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_txt { width:calc(100% - 200px); }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_txt.en { width:45%; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_txt p { padding-top:0; }
+  #main .ecosystem .ecosystem_coin .cont_right ul li .coin_chart .chart_txt.en { padding:20px 0; }
+
+  #footer .footer_cont .cont_left { line-height:70px; }
+  #footer .footer_cont .cont_left img { width:100px; }
+  #footer .footer_cont .cont_right p { font-size:10px; line-height:15px; }
+
+  #main .flatform .flatform_cont ul li { margin-bottom:5px; }
+
+  #main .roadmap { padding-bottom:80px; }
+  #main .roadmap ul li .map_cont ul>li { margin-top:10px; }
+  #main .roadmap ul li .map_tit ul li { font-size:25px; }
+  #main .roadmap ul li .map_tit ul .line { margin-top:18px; }
+  #main .roadmap ul li .map_cont .map_list .month { font-size:15px; }
+  #main .roadmap ul li .map_cont .map_list li { font-size:17px; padding-top:7px; }
+  #main .roadmap ul .maplist_01 .map_tit ul .line { width:calc(100% - 95px); }
+  #main .roadmap ul .roadmap_list { padding:0 0 20px; }
+
+  .float_btn ul li { margin-bottom:10px; }
+  .float_btn ul li a img { width:40px; }
+}
+@media screen and (max-width:501px) {
+  #main .title { padding:40px 0 20px; }
+  #main .title h1 { font-size:20px; }
+
+  #main .visual .visual_tit { padding-top:30px; }
+  #main .visual .visual_tit img { width:170px; }
+  #main .visual .visual_tit p { font-size:13px; padding:10px 0 20px; }
+  #main .visual .scroll_down .mouse { width:25px; height:40px; }
+  #main .visual .scroll_down .mouse .ball { width:4px; height:4px; }
+  #main .visual .scroll_down p { font-size:11px; }
+
+  #main .knom .knom_cont .cont_right { padding-top:20px; }
+  #main .knom .knom_cont .cont_right ul li p { font-size:13px; line-height:20px; }
+  #main .knom .knom_cont .cont_right ul li .knomlist_tit h2 { font-size:15px; margin-top:-1px; }
+  #main .knom .knom_cont .cont_right ul li .knomlist_tit h2.en { width:calc(100% - 33px); }
+
+  #main .project .project_cont .cont_top p { font-size:15px; }
+  #main .project .project_cont .cont_bottom h3 { font-size:20px; padding-bottom:10px; }
+  #main .project .project_cont .cont_bottom .protocol_checklist ul { padding:10px 0; }
+
+  #main .flatform02_cont .cont_left .swiper-container .swiper-wrapper .swiper-slide { font-size:20px; }
+  #main .flatform02_cont .cont_right h3 { font-size:17px; }
+  #main .flatform02_cont .cont_right p { font-size:13px; line-height:16px; }
+
+  #main .flatform03 .flatform03_cont ul .openmall_center { padding:20px 0; }
+  #main .flatform03 .flatform03_cont ul .openmall_center img { width:100px; }
+
+  #main .flatform .flatform_cont ul li .ff_txt h1 { font-size:15px; }
+  #main .flatform .flatform_cont ul li .ff_txt h3 { font-size:12px; }
+  #main .flatform .flatform_cont ul li .ff_txt p { font-size:10px; }
+  #main .flatform .flatform_cont ul li .ff_txt.en p { font-size:10px; }
+  #main .flatform .flatform_cont ul li .cont_left { height:170px; }
+  #main .flatform .flatform_cont ul li .cont_right { height:130px; }
+
+  #main .ecosystem .ecosystem_cont h3 { font-size:15px; padding-bottom:10px; }
+  #main .ecosystem .ecosystem_cont .ecosystem_swip .swiper-container .swiper-wrapper { padding:0 0 15px; }
+  #main .ecosystem .ecosystem_cont .ecosystem_swip .swiper-container .swiper-wrapper .swiper-slide { width:48%; margin:0 1%; }
+    .swiper-pagination-bullet { width:5px !important; height:5px !important; }
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet { margin:0 2px !important; }
+
+  #main .ecosystem .ecosystem_coin { padding-top:30px; }
+  #main .ecosystem .ecosystem_coin .cont_right { padding-left:0; }
+  #main .ecosystem .ecosystem_coin .cont_right h2 { font-size:18px; }
+  #main .ecosystem .ecosystem_coin .cont_right ul li .coin_chart .chart_tit { font-size:15px; width:110px; padding:10px 0; }
+  #main .ecosystem .ecosystem_coin .cont_right ul li .coin_chart .chart_txt { width:calc(100% - 112px); padding:9px 0; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_tit { float:initial; width:100%; text-align:center; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .line { display:none; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_txt { float:initial; width:100%; text-align:center; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_txt p { text-align:center; padding-top:20px; }
+  #main .ecosystem .ecosystem_tokeneconomy ul .token_txt.en { width:100%; }
+
+  #main .partners .partners_cont ul li h1 { font-size:18px; }
+  #main .partners .part_bg.en { height:95%; }
+
+  #main .contactus .cont_all .cont_right ul li input { font-size:12px; }
+  #main .contactus .cont_all .cont_right textarea { font-size:12px; height:130px; }
+  #main .contactus .cont_all .cont_right button { font-size:15px; padding:10px 0; }
+
+
+  #main .visual .whitepaper ul li a .btn h4 { font-size:14px; }
+  #main .visual .whitepaper ul li a .btn img { height:15px !important; }
+
+  #footer .footer_cont .cont_right { width:50%; }
+}

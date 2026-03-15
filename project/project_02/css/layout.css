@@ -1,0 +1,21 @@
+/* body * { transition:all 0.3s ease 0s; } */
+
+body { word-break:keep-all; }
+
+.wrap { width:1400px; margin:0 auto; overflow:hidden; height:100%; }
+
+#header { width:100%; z-index:50; }
+/* #header * { transition:all 0.3s ease 0s; } */
+#main .section1 { width:100%; position:relative; overflow:hidden; background-image:url("../img/main_bg.png"); height:100%; background-repeat:no-repeat; background-position:center center; }
+#main .section1 * { transition:all 0.3s ease 0s; }
+#main .section2 { width:100%; position:relative; overflow:hidden; }
+#main .section3 { width:100%; position:relative; overflow:hidden; }
+#main .section4 { width:100%; position:relative; overflow:hidden; background-image:url("../img/sec4_bg.png"); background-repeat:no-repeat; background-position:center center; }
+#main .section5 { width:100%; position:relative; overflow:hidden; }
+#main .section6 { width:100%; position:relative; overflow:hidden; background-color:#f5f7fd; }
+#main .section7 { width:100%; position:relative; overflow:hidden; background-image:url("../img/sec7_bg.png"); background-repeat:no-repeat; background-position:center center; }
+#foot { width:100%; position:relative; overflow:hidden; background-color:#333; height:207px; }
+
+@media screen and (max-width:1400px) {
+  .wrap { width:auto; }
+}

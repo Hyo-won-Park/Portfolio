@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WOOZOOMUSIC">
+  <meta property="og:description" content="WOOZOOMUSIC">
+  <meta property="og:image" content="img/favicon/og_img.png">
+  <meta property="og:url" content="">
+
+  <meta name="description" content="WOOZOOMUSIC" />
+  <meta name="keywords" content="WOOZOOMUSIC" />
+  <meta name="author" content="WOOZOOMUSIC" />
+
+  <title>WOOZOOMUSIC</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+</head>
+
+
+<body>
+  <div class="float_btn" id="float_btn">
+    <ul>
+      <li>
+        <a href="#"><img src="img/float_01.png" onmouseover="this.src='img/float_01_on.png'" onmouseout="this.src='img/float_01.png'"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/float_02.png" onmouseover="this.src='img/float_02_on.png'" onmouseout="this.src='img/float_02.png'"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/float_03.png" onmouseover="this.src='img/float_03_on.png'" onmouseout="this.src='img/float_03.png'"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/float_04.png" onmouseover="this.src='img/float_04_on.png'" onmouseout="this.src='img/float_04.png'"></a>
+      </li>
+    </ul>
+  </div>
+
+  <header id="header">
+    <div class="wrap">
+      <div class="logo"><a href="eng.html"><img src="img/logo.png"></a></div>
+      <div class="mobile_menu_btn" id="open"><img src="img/menu_btn.png"></div>
+      <div class="mobile_back_btn" id="back"><img src="img/back_btn.png"></div>
+      <div class="nav">
+        <ul>
+          <li><a href="#outline">OUTLINE</a></li>
+          <li><a href="#platform">PLATFORM</a></li>
+          <li><a href="#system">SYSTEM FLOW</a></li>
+          <li><a href="#copyright">COPYRIGHT</a></li>
+          <li><a href="#analysis">ANALYSIS</a></li>
+          <li><a href="#loadmap">LOADMAP</a></li>
+          <li><a href="#contactus">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="lang_nav">
+        <ul>
+          <li><a href="index.html">KO</a></li>
+          <li class="on"><a href="eng.html">EN</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    $(function(){
+      $(window).scroll(function(){
+        var num = $(this).scrollTop();
+        if( num > 1 ){
+          $("#header").addClass('on');
+        }else{
+          $("#header").removeClass('on');
+        }
+      });
+    });
+
+    $(function(){
+      $('#open').click(function() {
+        $('.nav, .lang_nav, .mobile_back_btn').addClass('on');
+      });
+      $('#back, #header .nav ul li').click(function() {
+        $('.nav, .lang_nav, .mobile_back_btn').removeClass('on');
+      });
+    });
+  </script>
+
+  <section id="main">
+    <article class="visual">
+      <div class="wrap">
+        <div class="main_visual">
+          <div class="visual_tit scale-on-scroll"><img src="img/main_txt.png"></div>
+          <div class="paper_btn up-on-scroll">
+            <a href="woozoo_whitepaper_1,0_KO.pdf" target="_blank">WHITE PAPER</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="outline" id="outline">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star_white.png"></div>
+          <h1 class="white opacity-on-scroll">OUTLINE</h1>
+        </div>
+        <div class="outline_cont">
+          <div class="cont_txt up-on-scroll">
+            <ul>
+              <li>stars and fans,</li>
+              <li class="line">&nbsp;</li>
+              <li>Meet in virtuality</li>
+            </ul>
+          </div>
+          <div class="cont_cont">
+            <div class="cont_left scale-on-scroll">
+              <img src="img/outline_eng.png">
+            </div>
+            <div class="cont_right left-on-scroll">
+              <p>
+                Space music (WZM) in a nutshell, meta-bus and blockchain technology.
+It is a platform that connects stars and fans based on this platform. Star and
+Fans are the most important participants in space music, and they're using space music protocols.
+Through this, we can communicate in various ways and form multifaceted relationships.
+The advertiser is also one of the participants in space music and is the foundation of the platform.
+It is responsible for building economy.<br><br>
+
+Big content producers (cp) : 1) The singer, is the building blocks music's ecosystem.
+(sponsor) consumer users, fans : (cc) 3) 2) source content, advertisers, etc.
+The music platform when it came to designing the basis of the space three basic components are required.
+An absolute requirement.<br><br>
+
+The system basic components of the music space bus type 1) virtual reality : vr
+And, avatars, users of the projection of the virtual world.2) : block chain.
+Content producers of creative products for the original copyright protection, and platform.
+Currency code to react to my virtual assets Rewards, transparent and reasonable compensation.
+Apply the system.These two components are a key technology system.
+And based on the reliability of the base.<br><br>
+
+The space music platform vision in entertainment markets, new eontaekteu
+Safe arrival of the cultural industries and creators of the completion of reasonable compensation system ".
+This new more transparent culture through music leading to the formation leader.
+As a platform.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="platform" id="platform">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star.png"></div>
+          <h1 class="opacity-on-scroll">PLATFORM KEY FEATURES</h1>
+        </div>
+        <div class="platform_cont right-on-scroll">
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide_left">
+                  <img src="img/platform_01.png">
+                </div>
+                <div class="slide_right">
+                  <h3>Meeting Stars and Fans</h3>
+                  <h2>VR-Concert</h2>
+                  <p>VR concerts provide direct spots between stars and fans, including performances, meetings, and conversations.
+                  It is held every day for nothing by stars, and through fan meetings, everything in virtual reality is possible with social contact technology.
+                  By providing public space, you can customize your own avatar. Real-time Streaming
+                  Through transmission, communication without gap between talker and listener is possible.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_left">
+                  <img src="img/platform_02.png">
+                </div>
+                <div class="slide_right">
+                  <h3>Fandom social community.</h3>
+                  <h2>VR-Fandom</h2>
+                  <p>VR fandom in categories such as singer, genre, etc.
+                    Build a Korean fandom and open social media
+                    It provides a function. The common denominator star.
+                    It provides a reality that can lead the story.
+                    Active communication between avatars is possible.
+                    A personalized virtual space is a place where you can see your talents and talents.
+                    Express it.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_left">
+                  <img src="img/platform_03.png">
+                </div>
+                <div class="slide_right">
+                  <h3>A gift only in the world.</h3>
+                  <h2>VR-Market</h2>
+                  <p>
+                    Avatars of stars, star of Avatar body, is market vr
+A variety of products, including tickets, fans.
+Provided by the Market Place.Items
+Protected the right to own and sell various items.
+The boating business users with space to be a (voting).
+With aggressive push for the products and the supermarket.
+Eoteuraekting is possible.All of the product.
+Used as purchased goods is currency.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="system" id="system">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star_white.png"></div>
+          <h1 class="white opacity-on-scroll">SYSTEM FLOW</h1>
+        </div>
+        <div class="system_cont scale-on-scroll">
+          <img src="img/system.png">
+          <p class="up-on-scroll">
+            Space music platform content production, consumption and other activities of the star and fan services (wzm) platform to begin with.All activities wzm protocol details the activities of users on the differential Rewards provides a reasonable as a token by analyzing all the details.Then was traffic using the platform of the activities of these between acting and riaekting an ad in the request and branding advertising protocol by the bespoke ai wzm possible.Chain block of all details of the advertising campaign also logged in the transparent and reliable by publicity can get feedback.<br><br>
+            The artist (content producer) decides whether to record data under the WZM protocol. You may not upload any data, or you may upload the entire data. Some data can also be erased and uploaded.The WZM protocol enables consumers to take ownership of data by giving users the right to choose data. Even if a user decides to upload part or all of the payment data, the user's personal information shall not be disclosed through anonymization or encryption. The WZM platform will induce more content production and activity by paying WZM tokens as compensation for users uploading payment data to the blockchain. WZM tokens, which are paid to users, are paid from space music pools secured through inflation of the blockchain itself.User activity data stored in the blockchain for sponsors will be used primarily to execute ads. Advertisers can process published activity data and identify consumers suitable for advertising purposes and conduct advertisements on the WZM network. In most cases, it may be difficult for advertisers to operate data directly, in which case adjustments can be made using a pool of intermediaries (partners).<br><br>
+
+            Fans and artists, who are users, can be used in three areas with WZM tokens returned from feedback on the results of the aforementioned content production and consumption. First, 1) WZM tokens can be cashed through listed exchanges. 2) VOTING is possible for artists or product candidates to participate as governance and be registered in the market through a certain proof of interest (POS) in the VR-market. Through this exercise of voting rights, one can feel a sense of role and responsibility as a democratic representative of Congress in a space music digital society.  Last but not least, 3) WZM tokens allow you to purchase merchandise in Marketplace or to pay for copyright split acquisition. This is also the core of the token ecosystem, which is considered the most important on the platform.
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="copyright" id="copyright">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star.png"></div>
+          <h1 class="opacity-on-scroll">COPYRIGHT PROTECTION OF CREATIONS</h1>
+        </div>
+        <div class="copyright_cont scale-on-scroll">
+          <img src="img/copyright.png">
+          <p class="up-on-scroll">
+          Ownership of sound sources and avatar content generated in the new virtual reality content ecosystem of the space music platform is protected by smart contracts. When a CP (content producer) generates its own avatar or produces and registers a sound source, it rearranges the essential items to be recorded in the blockchain through the WZM database. The DB history, which has been rearranged, is sent to Polka Dotnet via the WZM blockchain protocol, and the records are placed in the Pending state and in the Parking state to prepare for the next block record to be created. The fee for records that occur at this time shall be supported by processing as payment on behalf of the WZM platform. Afterwards, as soon as the next Polka Dot block is created, it records the details of related works and confirms whether the block is recorded or not in the Polka Dot scan to check the final status of the record. After the final recording is completed, measuring the contribution of CPs on the WZM platform and immediately providing rewards to the WZM token completes the one copyright protection cycle.<br><br>
+
+            Space Music (WZM) network allows anyone who participates in the ecosystem to become a VR content producer, and continuous revenue generation is possible through smart contracts. Consumers can rent or purchase content permanently. In order to create a sound market ecosystem related to virtual reality by utilizing blockchain, copyrights related to content production are protected while encouraging content producers to produce more content to help the entire VR industry become a virtuous cycle.
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="analysis" id="analysis">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star.png"></div>
+          <h1 class="opacity-on-scroll">WINNING STRATEGIES THROUGH COMPETITIVE ANALYSIS</h1>
+        </div>
+        <div class="analysis_cont">
+          <div class="analysis_cont_left right-on-scroll">
+            <img src="img/analysis.png">
+          </div>
+          <div class="analysis_cont_right left-on-scroll">
+            <h3>Winning Strategies Through Competitive Analysis</h3>
+            <p>
+              The rival of Space Music (WZM) is a multiverse-based 3D avatar called Geppetto.
+Geppetto has reached 3 million global downloads in just two months since its launch.
+Top of the list of free downloads in 35 countries around the world, including the United States, Japan, and South Korea.
+It's a recorded app. Geppetto doesn't stop at just making 3D avatars.
+I'm not only making a great 3D avatar image, but also making a video of it's on social media.
+It can also be easily shared. I also use avatars with a lot of friends in the app.
+It's like a mini-room in the old Cyworld.
+It is similar to friends visiting and sharing content together. Another characteristic is that
+Users are encouraging avatars to meet by calling each other within the app.
+These Geppetto first-person me more unique in virtual reality.
+Projecting is the biggest attraction for Generation Z. but
+These platforms also have disadvantages, and if we analyze and target them,
+Space music, a latecomer, could top the multiverse virtual reality industry.
+            </p>
+          </div>
+          <div class="analysis_swip_cont up-on-scroll">
+            <div class="swiper-container analy">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide_width">
+                    <img src="img/ana_01.png">
+                    <h3>Avatar world where I'm the main character VS Star & Fandom coexist</h3>
+                    <p>
+                      Geppetto's main character that I was the largest of the features and weaknesses.I became a center of rather bad things might turn out to properties.Abuse within the platform and mutual criticism is many platforms are many selfish point of view of ecosystem is increasingly tarnished.Music is my space, on the other hand, to participate in events as its starting point I am the idol star of the view that cheering and cohesion rather than criticism because the messages contain as a platform bias.These advantages are bright, cheerful than create a virtual reality games and cultural.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide_width">
+                    <img src="img/ana_02.png">
+                    <h3>Stable Point VS Cryptocurrency Utility Token</h3>
+                    <p>
+                      Geppetto was charging legal tender payment item purchases through the economy.Existing items like a dating app also induce payment is the price of the item and is not what would be sensible.Accumulate points way to receive your just reward for ludicrously low in payment system.These are areas in the early days of platform users to grow gradually, but I don't know whether we will have no impact on growth adversely affect the negative effects of the platform.<br><br>
+
+                      The music chain block of password for the money ecosystem provides a transparent and reasonable based on the Rewards.In addition, items paid too much for the purpose of inducing payment by avatars without a legitimate business incubation and events for the purpose token can be achieved (wzm) and use of space.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide_width">
+                    <img src="img/ana_03.png">
+                    <h3>A heavy platform, lightweight platform db vs db</h3>
+                    <p>
+                      Geppetto causes many errors and slowness in 3D modeling data, cameras and audio interworking. This is due to excessive data bottlenecks in user interfaces due to heavy data design. Space music is developed through a decentralized DB design to minimize the occurrence of trepics at the front end so that users do not have any problems using the platform. Space music servers will also be able to continuously expand to further optimize the DB bottleneck phenomenon.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"><img src="img/next_btn.png"></div>
+              <div class="swiper-button-prev"><img src="img/prev_btn.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ana_bg"></div>
+    </article>
+    <article class="loadmap" id="loadmap">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star_white.png"></div>
+          <h1 class="white opacity-on-scroll">LOADMAP</h1>
+        </div>
+        <div class="loadmap_cont">
+          <div class="loadmap_cont_left right-on-scroll">
+            <ul>
+              <li>2021</li>
+              <li><img src="img/loadmap_line.png"></li>
+              <li>2022</li>
+              <li><img src="img/loadmap_line.png"></li>
+              <li>2023</li>
+              <li><img src="img/loadmap_line.png"></li>
+              <li>2024</li>
+              <li><img src="img/loadmap_line.png"></li>
+              <li>2025</li>
+              <li><img src="img/loadmap_line.png"></li>
+              <li>2026</li>
+            </ul>
+          </div>
+          <div class="loadmap_cont_right left-on-scroll">
+            <ul>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_01.png">
+                </div>
+                <div class="map_right">
+                  <h2>2021</h2>
+                  <h3>BUILD UP</h3>
+                  <p>
+                    Project Open<br>
+                    White paper 1.0<br>
+                    Development and Planning platform.<br>
+                    Private Sale<br>
+                    Listed
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_02.png">
+                </div>
+                <div class="map_right">
+                  <h2>2022</h2>
+                  <h3>PLATFORM START</h3>
+                  <p>
+                    A space launch Music app<br>
+                    Platform Public Test<br>
+                    White paper 2.0<br>
+                    Go into domestic promotion/marketing<br>
+                    Major Exchange listing.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_03.png">
+                </div>
+                <div class="map_right">
+                  <h2>2023</h2>
+                  <h3>UPGRADE</h3>
+                  <p>
+                    Space music pc app the market.<br>
+                    Southeast Asian expansion<br>
+                    Advanced Phase 2 Upgrade<br>
+                    Exchange listing expansion
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_04.png">
+                </div>
+                <div class="map_right">
+                  <h2>2024</h2>
+                  <h3>GLOBAL PLATFORM</h3>
+                  <p>
+                    British-American/European expansion<br>
+                    +10,000,000 users<br>
+                    Daily Payment +50,000 Tx<br>
+                    Attracting investment in Series A+
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_05.png">
+                </div>
+                <div class="map_right">
+                  <h2>2025</h2>
+                  <h3>UNICORN ASCENSION</h3>
+                  <p>
+                    (+ 1 trillion) grade the unicorn<br>
+                    Enhanced level 3.<br>
+                    A series of investment + b
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_06.png">
+                </div>
+                <div class="map_right">
+                  <h2>2026</h2>
+                  <h3>ipo</h3>
+                  <p>
+                    Korea Stock Exchange.<br>
+                    (INITIAL DISCLOSURE)
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="contactus" id="contactus">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star_white.png"></div>
+          <h1 class="white opacity-on-scroll">CONTACT US</h1>
+        </div>
+        <form class="contact"  action="/save.php"  method="post"  onsubmit="return send()">
+        <div class="cont_all up-on-scroll">
+          <div class="cont_left">
+            <img src="img/cont_logo.png">
+          </div>
+          <div class="cont_right">
+            <ul>
+              <li><input type="text" name="name" placeholder="Name" required></li>
+              <li><input type="text" name="email" placeholder="E-mail Address" required></li>
+            </ul>
+            <textarea placeholder="Message" name="message" required></textarea>
+            <button type="submit">SUBMIT</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </article>
+  </section>
+  <footer id="foot">
+    <div class="wrap">
+      <div class="foot_sns">
+        <ul>
+          <li><a href="#"><img src="img/sns_01.png"></a></li>
+          <li><a href="#"><img src="img/sns_02.png"></a></li>
+          <li><a href="#"><img src="img/sns_03.png"></a></li>
+          <li><a href="#"><img src="img/sns_04.png"></a></li>
+          <li><a href="#"><img src="img/sns_05.png"></a></li>
+        </ul>
+        <p>COPYRIGHT 2020 WOOZOOMUSIC INC. All RIGHTS RESERVED</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });
+
+  var swiper = new Swiper(".analy", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+
+  });
+
+  $(document).ready(function() {
+   $(window).scroll( function(){
+     $('.up-on-scroll').each( function(i){
+        var bottom_of_element = $(this).offset().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if( bottom_of_window > bottom_of_element ){
+           $(this).addClass('on')
+        } else {
+          $(this).removeClass('on')
+        }
+     });
+   });
+ });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.left-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.right-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.scale-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.rotate-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.opacity-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+
+  $(window).load(function(){
+    $('#outline .tit_top, #outline h1.white, .outline_cont .cont_txt, .outline_cont .cont_cont .cont_left, .outline_cont .cont_cont .cont_right, .visual_tit, .paper_btn').addClass('on');
+  });
+
+  $(function(){
+$(window).scroll(function(){
+  var num = $(this).scrollTop();
+  if( num > 500 ){
+    $("#float_btn").addClass('on');
+  }else{
+    $("#float_btn").removeClass('on');
+  }
+});
+});
+
+  $(function() {
+
+   var $w = $(window),
+     footerHei = $('footer').outerHeight(),
+     $banner = $('#float_btn');
+
+   $w.on('scroll', function() {
+
+     var sT = $w.scrollTop();
+     var val = $(document).height() - $w.height() - footerHei;
+
+     if (sT >= val)
+         $banner.addClass('plus')
+     else
+       $banner.removeClass('plus')
+
+   });
+
+  });
+
+</script>
+
+</html>

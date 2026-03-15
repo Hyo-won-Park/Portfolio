@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BIIG">
+  <meta property="og:description" content="BIIG">
+  <meta property="og:image" content="img/favicon/og_img.png">
+  <meta property="og:url" content="BIIG">
+
+  <meta name="description" content="BIIG" />
+  <meta name="keywords" content="BIIG" />
+  <meta name="author" content="BIIG" />
+
+  <title>BIIG</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+</head>
+
+
+<body>
+
+  <header id="header">
+    <div class="head_logo">
+      <a href="index.html"><img src="img/logo.png"></a>
+    </div>
+    <div class="nav">
+      <div class="wrap">
+        <ul>
+          <li><a href="#vision">VISION</a></li>
+          <li><a href="#background">BACKGROUND</a></li>
+          <li><a href="#platform">PLATFORM</a></li>
+          <li><a href="#business_model">BUSINESS MODEL</a></li>
+          <li><a href="#team">TEAM</a></li>
+          <li><a href="#partners">PARTNERS</a></li>
+          <li><a href="#contactus">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="lang_nav">
+      <ul>
+        <li class="on"><a href="index.html">KO</a></li>
+        <li><a href="eng.html">EN</a></li>
+      </ul>
+    </div>
+    <div class="menu_btn" id="open"><img src="img/menu.png"></div>
+    <div class="back_btn" id="back"><img src="img/back.png"></div>
+  </header>
+  <div class="float_btn" id="float_btn">
+    <ul>
+      <li><a href="https://www.facebook.com/BIIG-108735794688282" target="_blank"><img src="img/float_01.png" onmouseover="this.src='img/float_01_on.png'" onmouseout="this.src='img/float_01.png'"></a></li>
+      <li><a href="https://www.facebook.com/BIIG-108735794688282" target="_blank"><img src="img/float_02.png" onmouseover="this.src='img/float_02_on.png'" onmouseout="this.src='img/float_02.png'"></a></li>
+      <li><a href="https://medium.com/@mbridge010" target="_blank"><img src="img/float_03.png" onmouseover="this.src='img/float_03_on.png'" onmouseout="this.src='img/float_03.png'"></a></li>
+      <li><a href="https://twitter.com/BIIG67765773" target="_blank"><img src="img/float_04.png" onmouseover="this.src='img/float_04_on.png'" onmouseout="this.src='img/float_04.png'"></a></li>
+    </ul>
+  </div>
+
+  <script>
+    $(function(){
+    $(window).scroll(function(){
+      var num = $(this).scrollTop();
+      if( num > 500 ){
+        $("#float_btn").addClass('plus');
+      }else{
+        $("#float_btn").removeClass('plus');
+      }
+    });
+  });
+
+  $(function(){
+  $('#open').click(function() {
+    $('.nav, .lang_nav, .back_btn').addClass('on');
+  });
+  $('#back, #header .nav ul li').click(function() {
+    $('.nav, .lang_nav, .back_btn').removeClass('on');
+  });
+});
+  </script>
+
+  <section id="main">
+    <article class="visual">
+      <div class="wrap">
+        <div class="visual_txt">
+          <img src="img/main_logo.png">
+          <div class="visal_btn">
+            <div class="download_btn">
+              <a href="BIIG_KO.pdf" target="_blank" class="download">WHITE PAPER</a>
+            </div>
+            <div class="googlebtn">
+              <a href="#" download="#" class="download">
+                <img src="img/goo.png">
+                <p>DOWNLOAD</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="vision" id="vision">
+      <div class="wrap">
+        <div class="title">
+          <img src="img/top_img.png" class="rotate-on-scroll">
+            <h1 class="up-on-scroll">OUR VISION</h1>
+            <h5 class="up-on-scroll">PRODUCE AND DELIVER TRANSPARENT<br>BLOCKCHAIN INFORMATION</h5>
+        </div>
+        <div class="vision_cont">
+          <p class="up-on-scroll">블록체인 시장 콘텐츠 통합 & 맞춤형 정보 제공 GATEWAY</p>
+          <div class="cont">
+            <div class="vision_cont_left scale-on-scroll">
+              <img src="img/mission.png">
+            </div>
+            <div class="vision_cont_right left-on-scroll">
+              <p>BIIG 프로젝트는 글로벌 블록체인 콘텐츠 시장의 통합을 위해 추진된다. 파편화되고 흩어져 있던 블록체인 정보들을 한곳으로 모아 소비자 맞춤형 정보 제공을 위한 포털(Portal) 그 자체이다. 중앙화 된 포털 플랫폼들은 블록체인 정보를 커스텀하고 맞춤형으로 제공하기에 상당한 제약조건들이 많다. 또한 기성 플랫폼들의 집약적인 정보 제공 능력은 중앙화 정보 제공에 집중되어 있어, 탈중앙화를 이념으로 하는 블록체인 정보를 제공하기에는 요소적 불일치화로 인해 큰 진입 장벽들이 있다.</p>
+              <p class="second">BIIG 플랫폼은 자립적 성장기반을 위한 블록체인에 전문화된 투명한 정보제공을 목적으로 하며, 객관적인 콘텐츠 정보를 제공함으로써 소비자들로부터 신뢰성을 뒷받침할 것이다. 또한 지속가능한 사회적 이익 제공을 통한 공익성을 보장하는 등 다양한 온라인 문화를 조성하는 것이다</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="background" id="background">
+      <div class="wrap">
+        <div class="title">
+          <img src="img/top_img.png" class="rotate-on-scroll">
+            <h1 class="up-on-scroll">BACKGROUND</h1>
+            <h5 class="up-on-scroll">BLOCKCHAIN MARKET SIZE AND<br>CUSTOMER NEEDS ANALYSIS</h5>
+        </div>
+        <div class="sub_title">
+          <h3 class="up-on-scroll">HUGE GLOBAL BLOCKCHAIN MARKET SIZE</h3>
+        </div>
+        <div class="back_cont">
+          <div class="cont">
+            <div class="back_cont_left left-on-scroll">
+              <p>2020 년 미국의 포춘 비즈니스 인사이트가 시장 분석 보고서를 통해 블록체인 기술 시장이 매년 38% 이상 성장, 오는 2025 년에는 210 억달러 규모에 이를 것으로 전망했다. 코로나 19 확산에 따른 전 세계적 경기 침체에도 불구하고 기업 시장에서 블록체인 기술 부문에 대한 투자는 꾸준히 증가할 것으로 보았다. 기업 대상 전 세계 블록체인 기술 시장 규모는 지난 2017 년에 16 억 4000 만달러에서 시작해 연평균 38.4%씩 성장, 오는 2025 년에는 210 억 7000 만달러에 이를 것으로 전망했다. 투자 확대에 따른 연구 개발 활성화가 공공 및 정부의 인지도 향상, 규제 완화로 이어져 블록체인 산업 성장이 점차 가속될 것으로 분석했다. <br>
+              보고서는 블록체인 기술을 가장 적극 활용하는 산업으로 플랫폼 분야을 꼽았다. 제조와 의료, 도소매 유통, 에너지, 공공 부문도 블록체인 기술 적용이 활발할 것으로 보았다. 아울러, 블록체인 관련 일자리 수요 역시 2025 년경에는 주요 SW(소프트웨어) 산업 수준에 이를 것으로 보고 있다.</p>
+            </div>
+            <div class="back_cont_right scale-on-scroll">
+              <img src="img/graph.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="platform" id="platform">
+      <div class="wrap">
+        <div class="title">
+          <img src="img/top_img.png" class="rotate-on-scroll">
+            <h1 class="up-on-scroll">BIIG PLATFORM</h1>
+            <h5 class="up-on-scroll">BLOCKCHAIN-SPECIALIZED COMPREFENSIVE<br>PORTAL PLATFORM</h5>
+        </div>
+        <div class="plat_cont">
+          <h1 class="left-on-scroll">블록체인 정보를 한곳에, 쉽고 빠른 p2P 검색포털 플랫폼</h1>
+          <img src="img/platform.png" class="pc scale-on-scroll">
+          <img src="img/platform_mobile.png" class="mobile scale-on-scroll">
+        </div>
+      </div>
+    </article>
+    <article class="keywords up-on-scroll">
+      <div class="wrap">
+        <div class="sub_title">
+          <h3 class="left-on-scroll">ABOUT ALl BLOCKCHAIN KEYWORDS</h3>
+        </div>
+        <div class="keyw_cont">
+          <div class="ketw_cont_left left-on-scroll">
+            <p>BIIG 플랫폼에 가장 핵심이 되는 콘텐츠 정보들은 블록체인 사업시장의 소비자들이 가장 알기 쉽고 빠르게 정보를 전달할 수 있는 주요 키워드 단위로 콘텐츠를 정렬해 제공한다. 기존 네이버, 구글 처럼 통상적인 중앙형 포탈 플랫폼의 카테고리 정렬과는 상이한 블록체인만의 주요 키워드로 구성되어 진다</p>
+            <p class="second">BIIG 플랫폼은 기성의 넘쳐나는 블록체인 콘텐츠 정보를 하나로 모아 서비스를 제공한다. 메인넷 정보는 퍼블릭 메인넷과 프라이빗 메인넷 두가지 카테고리로 나누어 메인넷들에 대한 정보들을 제공하며, 어떠한 메인넷이 자신의 비즈니스에 적합한지 선택할 수 있다. 거래소는 전 세계 거래소들을 비교하여 거래를 하고자 하는 소비자들이 자신들에게 가장 투자하기 적합한 거래소를 정할 수 있도록 정보를 제공하고 토큰의 시세를 실시간 확인할 수 있도록 한다.</p>
+          </div>
+          <div class="ketw_cont_right scale-on-scroll">
+            <img src="img/ketwords.png">
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="dapp">
+      <div class="wrap">
+        <div class="sub_title">
+          <h3 class="left-on-scroll">BIIG PATFORM DAPP(S) LIST CHART</h3>
+        </div>
+        <div class="dapp_cont left-on-scroll">
+          <p>디앱의 콘텐츠 정렬의 우선순위는 총 4 가지 요소에 결정이 된다. 얼마나 많이 검색을 하였는지를 보는 CPV(Cost Per View), 얼마나 많이 클릭했는지를 보는 CPC(Cost Per Click), 얼마나 노출이 되었는지를 보는 CPM(Cost Per Mile), 그리고 그 디앱을 얼마나 설치했는지를 보는 CPI(Cost per Install) 이 4 개 요소는 플랫폼의 광고 생태계와도 직접적인 연관이 있다. 이중 특히 최종적 형태의 요소인 CPI 의 경우에는 검색 노출도에 1 순위의 가중치 요소이다.</p>
+          <p class="second">BIIG 플랫폼의 방향성은 독립적인 시스템이 아니라, 현재 오픈된 모든 시장의 블록체인 정보를 한곳으로 모으는 통로 역할을 하고 유저들이 원하는 정보들이 다양하기 때문에 풍성한 콘텐츠와 객관적인 정보를 제공하는 것이 핵심이다.</p>
+          <img src="img/dapp.png" class="scale-on-scroll">
+        </div>
+      </div>
+    </article>
+    <article class="business_model" id="business_model">
+      <div class="wrap">
+        <div class="title">
+          <img src="img/top_img.png" class="rotate-on-scroll">
+            <h1 class="up-on-scroll">BUSINESS MODEL</h1>
+            <h5 class="up-on-scroll">THE ROLE OF ADVERTISERS AND CONSUMERS IS <br>IMPORTANT FOR THE BUSINESS MODEL OF PORTAL PLATFORMS</h5>
+        </div>
+        <div class="model_cont left-on-scroll">
+          <p>BIIG 플랫폼의 주 수익모델(BM)은 포털 광고이다. 일반 소비자들은 무료로 편리하게 포털 플랫폼을 사용하고 광고주는 이러한 소비자들의 행동 패턴을 이용하여 플랫폼에 노출, 설치, 유입 등의 광고행위를 진행한다. BIIG 플랫폼은 일반 프로젝트 코인 광고, 어플리케이션 광고 등 해당 프로젝트 성격에 맞도록 광고를 진행할 수 있다. BIIG 플랫폼의 광고 영역은 배너, 영상, 검색, 인기 키워드 등의 다양한 포털 광고 영역을 구성하며, O2O 광고 신청 코너를 통하여 기업 또는 개인이 자유롭게 광고플랫폼을 이용할 수 있다</p>
+          <img src="img/model.png" class="scale-on-scroll">
+        </div>
+      </div>
+    </article>
+    <article class="wallet">
+      <div class="wrap">
+        <div class="sub_title">
+          <h3 class="left-on-scroll">BLOCKERLESS P2P WALLET CERTIFICATE</h3>
+        </div>
+        <div class="wallt_cont left-on-scroll">
+          <p>BIIG 플랫폼은 개인간 P2P 거래로 이루어 지는 탈중앙 포털 플랫폼이다. 여기서 가장 핵심적인 사항은 바로 로그인 인증에 대한 탈중앙화가 이루어 졌는지 여부가성립되어야 한다. BIIG 지갑을 지준으로 모든 유저들은 플랫폼에 인증을 득하고 획득한 리워드를 P2P 로 수령한다. 이더리움(ETH) 기반의 모든 표준을 따르며, 이중BIIG 토큰이 기축의 역할을 하며, 기존 ERC20 표준 토큰들은 모두 BIIG 토큰을 기축으로 생태계를 구성한다. 모든 토큰과 인증 체계는 개인이 프라이킷와 니모닉,그리고 키스토어 관리를 직접 구성하여 제 3 자에 의한 간섭 또는 개인정보 탈취에 대한 위험으로부터 독립할 수 있다. <br><br>
+          BIIG 플랫폼에서 개인정보는 취급하지 않는다. 개인의 지갑에 의해 P2P 역할을 수행하며, 지갑의 퍼블릭 주소와 프라이빗 키를 중심으로 모든 인증과 프로세스는 작동한다. 엔터프라이즈의 경우에는 BIIG 지갑 기업인증을 위한 기본적인 비즈니스 정보를 획득하지만, 이는 기본적인 비즈니스를 위한 절차 일뿐 해당 정보를활용하거나 마케팅에 활용하지 않는다. <br><br>
+          BIIG 지갑은 플랫폼의 기본적인 인증 프로세스의 중심에 있다. 유저들도 간편하게 운영될수 있도록 하며, 스마트 컨트랙트에 의해 이더리움(ETH) 전송 수수료는 BIIG 재단에 의해 지불되어, 유저들이 이더리움을 보유해야 하는 불편함을 해소한다. BIIG 토큰이 중심이 되기에 플랫폼은 더욱 확실하고 신뢰성있는 플랫폼의 생태계를 구성하게 된다.</p>
+          <img src="img/wallet.png" class="scale-on-scroll">
+          <div class="google_btn up-on-scroll"><a href="#"><img src="img/down_btn.png"></a></div>
+        </div>
+      </div>
+    </article>
+    <article class="team" id="team">
+      <div class="wrap">
+        <div class="title">
+          <img src="img/top_img.png" class="rotate-on-scroll">
+            <h1 class="up-on-scroll">BIIT TEAM</h1>
+            <h5 class="up-on-scroll">GROW ON THE BASIS OF<br> COMPETENT PEOPLE</h5>
+        </div>
+        <div class="sub_title left-on-scroll">
+          <h3>TEAM</h3>
+        </div>
+        <div class="team_cont">
+          <ul>
+            <li class="up-on-scroll">
+              <div class="team_img"><img src="img/team_01.png"></div>
+              <div class="team_txt">
+                <h1>CEO</h1>
+                <h2>이정훈</h2>
+                <p>
+                  ㈜코스터미디어 대표이사<br>
+                  前)서울신문<br>
+                  前)스포츠조선<br>
+                  고려대학교 신문방송학과 졸업
+                </p>
+              </div>
+            </li>
+            <li class="up-on-scroll">
+              <div class="team_img"><img src="img/team_02.png"></div>
+              <div class="team_txt">
+                <h1>CFO</h1>
+                <h2>서병권</h2>
+                <p>
+                  ㈜코스터미디어<br>
+                  前) ㈜오마주 대표이사<br>
+                  前) SBS, MBC 중소기업 대한민국의힘 외주제작
+                </p>
+              </div>
+            </li>
+            <li class="up-on-scroll">
+              <div class="team_img"><img src="img/team_03.png"></div>
+              <div class="team_txt">
+                <h1>CMO</h1>
+                <h2>류습</h2>
+                <p>
+                  ㈜코스터미디어<br>
+                  前) 기업방송 외주제작
+                </p>
+              </div>
+            </li>
+            <li class="up-on-scroll">
+              <div class="team_img"><img src="img/team_04.png"></div>
+              <div class="team_txt">
+                <h1>CTO</h1>
+                <h2>MARCUS</h2>
+                <p>
+                  (주)코스터 총괄이사<br>
+                  前) ㈜대산에이스 총괄이사<br>
+                  前) ㈜코스터네트웍스 블록체인 본부장<br>
+                  前) ㈜펜타온 신사업 컨설팅<br>
+                  前) ㈜삼성
+                </p>
+              </div>
+            </li>
+            <li class="up-on-scroll">
+              <div class="team_txt">
+                <h1>COO</h1>
+                <h2>김대민</h2>
+                <p>
+                  ㈜코스터미디어<br>
+                  前) 블록체인 비즈니스 모델 컨설팅<br>
+                  前) 블록체인 프로젝트 PM<br>
+                  포항공대 졸업
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="sub_title">
+          <h3 class="left-on-scroll">ADVISOR</h3>
+        </div>
+        <div class="team_cont adv_cont">
+          <ul>
+            <li class="up-on-scroll">
+              <div class="team_img"><img src="img/team_05.png"></div>
+              <div class="team_txt">
+                <h1>편집부장</h1>
+                <h2>김승환</h2>
+                <p>
+                  ㈜비츠로미디어<br>
+                  前) 서울신문 A&B<br>
+                  前) 한국경제신문
+                </p>
+              </div>
+            </li>
+            <li class="up-on-scroll">
+              <div class="team_img"><img src="img/team_06.png"></div>
+              <div class="team_txt">
+                <h1>기자</h1>
+                <h2>이규희 </h2>
+                <p>
+                  언론사 종합편성채널부<br>
+                  인하대학교 졸업<br>
+                </p>
+              </div>
+            </li>
+            <li class="up-on-scroll">
+              <div class="team_txt">
+                <h1>이사</h1>
+                <h2>이재필</h2>
+                <p>
+                  외국계 미디어<br>
+                  前) ㈜Mnet
+                </p>
+              </div>
+            </li>
+            <li class="up-on-scroll">
+              <div class="team_txt">
+                <h1>대표이사</h1>
+                <h2>신도연</h2>
+                <p>
+                  (주)내외경제TV<br>
+                  前) ㈜매일경제<br>
+                  前) ㈜스포츠조선
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class="partners" id="partners">
+      <div class="wrap">
+        <div class="title">
+          <img src="img/top_img.png" class="rotate-on-scroll">
+            <h1 class="up-on-scroll">BIIT PARTNERS</h1>
+            <h5 class="up-on-scroll">A COMPANYY MOVING FORWARD TOGETHER</h5>
+        </div>
+        <div class="part_cont scale-on-scroll">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/slide_01.png"></div>
+              <div class="swiper-slide"><img src="img/slide_02.png"></div>
+              <div class="swiper-slide"><img src="img/slide_03.png"></div>
+              <div class="swiper-slide"><img src="img/slide_04.png"></div>
+              <div class="swiper-slide"><img src="img/slide_05.png"></div>
+              <div class="swiper-slide"><img src="img/slide_06.png"></div>
+              <div class="swiper-slide"><img src="img/slide_07.png"></div>
+              <div class="swiper-slide"><img src="img/slide_08.png"></div>
+              <div class="swiper-slide"><img src="img/slide_09.png"></div>
+              <div class="swiper-slide"><img src="img/slide_10.png"></div>
+              <div class="swiper-slide"><img src="img/slide_11.png"></div>
+              <div class="swiper-slide"><img src="img/slide_12.png"></div>
+              <div class="swiper-slide"><img src="img/slide_13.png"></div>
+              <div class="swiper-slide"><img src="img/slide_14.png"></div>
+              <div class="swiper-slide"><img src="img/slide_15.png"></div>
+              <div class="swiper-slide"><img src="img/slide_16.png"></div>
+              <div class="swiper-slide"><img src="img/slide_17.png"></div>
+              <div class="swiper-slide"><img src="img/slide_18.png"></div>
+              <div class="swiper-slide"><img src="img/slide_19.png"></div>
+              <div class="swiper-slide"><img src="img/slide_20.png"></div>
+              <div class="swiper-slide"><img src="img/slide_21.png"></div>
+              <div class="swiper-slide"><img src="img/slide_22.png"></div>
+              <div class="swiper-slide"><img src="img/slide_23.png"></div>
+              <div class="swiper-slide"><img src="img/slide_24.png"></div>
+              <div class="swiper-slide"><img src="img/slide_25.png"></div>
+              <div class="swiper-slide"><img src="img/slide_26.png"></div>
+              <div class="swiper-slide"><img src="img/slide_27.png"></div>
+              <div class="swiper-slide"><img src="img/slide_28.png"></div>
+              <div class="swiper-slide"><img src="img/slide_29.png"></div>
+              <div class="swiper-slide"><img src="img/slide_30.png"></div>
+              <div class="swiper-slide"><img src="img/slide_31.png"></div>
+              <div class="swiper-slide"><img src="img/slide_32.png"></div>
+              <div class="swiper-slide"><img src="img/slide_33.png"></div>
+              <div class="swiper-slide"><img src="img/slide_34.png"></div>
+              <div class="swiper-slide"><img src="img/slide_35.png"></div>
+              <div class="swiper-slide"><img src="img/slide_36.png"></div>
+              <div class="swiper-slide"><img src="img/slide_37.png"></div>
+              <div class="swiper-slide"><img src="img/slide_38.png"></div>
+              <div class="swiper-slide"><img src="img/slide_39.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="roadmap" id="roadmap">
+      <div class="wrap">
+        <div class="title2">
+          <img src="img/top_img2.png" class="rotate-on-scroll">
+            <h1 class="up-on-scroll">BIIT ROAD MAP</h1>
+            <h5 class="up-on-scroll">IT RECORDS A NEW HISTORY OF BLOCKCHAIN PORTAL<br> PLATFORMS</h5>
+        </div>
+        <div class="road_cont scale-on-scroll">
+          <img class="pc" src="img/map.png">
+          <img class="mobile" src="img/map_mobile.png">
+        </div>
+      </div>
+    </article>
+    <article class="contactus" id="contactus">
+      <div class="wrap">
+        <div class="title">
+          <img src="img/top_img.png" class="rotate-on-scroll">
+            <h1 class="up-on-scroll">CONTACT US</h1>
+        </div>
+        <form class="contact"  action="/save.php"  method="post"  onsubmit="return send()">
+        <div class="cont_all up-on-scroll">
+          <div class="cont_left left-on-scroll">
+            <img src="img/cont_logo.png">
+          </div>
+          <div class="cont_right up-on-scroll">
+            <ul>
+              <li><input type="text" name="name" placeholder="Name" required></li>
+              <li><input type="text" name="email" placeholder="E-mail Address" required></li>
+            </ul>
+            <textarea placeholder="Message" name="message" required></textarea>
+            <button type="submit">SUBMIT</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </article>
+  </section>
+
+  <footer id="foot">
+    <div class="wrap">
+      <div class="foot_cont">
+        <div class="foot_left">
+          <img src="img/foot_logo.png">
+          <p>COPYRIGHT © 2021, BY BIIG All RIGHTS RESERVED.</p>
+        </div>
+        <div class="foot_right">
+          <ul>
+            <li><a href="https://twitter.com/BIIG67765773" target="_blank"><img src="img/sns_01.png"></a></li>
+            <li><a href="https://www.facebook.com/BIIG-108735794688282" target="_blank"><img src="img/sns_02.png"></a></li>
+            <li><a href="https://medium.com/@mbridge010" target="_blank"><img src="img/sns_03.png"></a></li>
+            <li><a href="#"><img src="img/sns_04.png"></a></li>
+            <li><a href="#"><img src="img/sns_05.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  });
+
+  $(function() {
+
+ var $w = $(window),
+   footerHei = $('footer').outerHeight(),
+   $banner = $('#float_btn');
+
+ $w.on('scroll', function() {
+
+   var sT = $w.scrollTop();
+   var val = $(document).height() - $w.height() - footerHei;
+
+   if (sT >= val)
+       $banner.addClass('on')
+   else
+     $banner.removeClass('on')
+
+ });
+
+});
+
+$(document).ready(function() {
+    $(window).scroll( function(){
+      $('.up-on-scroll').each( function(i){
+         var bottom_of_element = $(this).offset().top;
+         var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+         if( bottom_of_window > bottom_of_element ){
+            $(this).addClass('on')
+         } else {
+           $(this).removeClass('on')
+         }
+      });
+    });
+  });
+  $(document).ready(function() {
+    $(window).scroll( function(){
+      $('.left-on-scroll').each( function(i){
+         var bottom_of_element = $(this).offset().top;
+         var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+         if( bottom_of_window > bottom_of_element ){
+            $(this).addClass('on')
+         } else {
+           $(this).removeClass('on')
+         }
+      });
+    });
+  });
+  $(document).ready(function() {
+    $(window).scroll( function(){
+      $('.scale-on-scroll').each( function(i){
+         var bottom_of_element = $(this).offset().top;
+         var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+         if( bottom_of_window > bottom_of_element ){
+            $(this).addClass('on')
+         } else {
+           $(this).removeClass('on')
+         }
+      });
+    });
+  });
+  $(document).ready(function() {
+    $(window).scroll( function(){
+      $('.rotate-on-scroll').each( function(i){
+         var bottom_of_element = $(this).offset().top;
+         var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+         if( bottom_of_window > bottom_of_element ){
+            $(this).addClass('on')
+         } else {
+           $(this).removeClass('on')
+         }
+      });
+    });
+  });
+
+  $(window).load(function(){
+   $('.vision .title img, .vision .title h1, .vision .title h5').css({'opacity':'1','transform':'none'});
+ });
+</script>
+
+</html>

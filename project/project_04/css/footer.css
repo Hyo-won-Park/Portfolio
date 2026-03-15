@@ -1,0 +1,30 @@
+#foot { background-color:#1e1f1b; position:relative; padding:80px 0; }
+#foot .foot_cont { overflow:hidden; }
+#foot .foot_cont .foot_left { float:left; }
+#foot .foot_cont .foot_left p { font-size:15px; color:#fff; padding-top:30px; }
+#foot .foot_cont .foot_right { float:right; margin-top:30px; }
+#foot .foot_cont .foot_right ul { overflow:hidden; }
+#foot .foot_cont .foot_right ul li { float:left; padding-left:10px; }
+
+@media screen and (max-width:1250px) {
+  #foot { padding:40px 0; }
+  #foot .foot_cont .foot_right ul li { width:50px; padding-left:5px; }
+  #foot .foot_cont .foot_left img { width:120px; }
+  #foot .foot_cont .foot_left p { padding-top:15px; font-size:12px; }
+  #foot .foot_cont .foot_right { margin-top:12px; }
+
+}
+
+@media screen and (max-width:770px) {
+  #foot .foot_cont .foot_left { float:initial; text-align:center; }
+  #foot .foot_cont .foot_right { float:initial; text-align:center; width:280px; margin:0 auto; }
+  #foot .foot_cont .foot_left p { padding:10px 0; }
+}
+
+@media screen and (max-width:501px) {
+  #foot { padding:20px 0; }
+  #foot .foot_cont .foot_left img { width:80px; }
+  #foot .foot_cont .foot_left p { font-size:10px; }
+  #foot .foot_cont .foot_right { width:200px; }
+  #foot .foot_cont .foot_right ul li { width:35px;  }
+}

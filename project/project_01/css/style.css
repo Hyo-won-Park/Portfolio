@@ -1,0 +1,240 @@
+.wrap { width:1305px; margin:0 auto; overflow:hidden; }
+
+#main .section1 { width:100%; position:relative; overflow:hidden; }
+#main .section2 { width:100%; position:relative; overflow:hidden; }
+#main .section3 { width:100%; position:relative; overflow:hidden; }
+#main .section4 { width:100%; position:relative; overflow:hidden; }
+
+/* section>이미지 */
+.section1 img {width:100%;}
+.section3 img {width:100%;}
+.section4 img {width:100%;}
+
+/* Section2 */
+.section2 .wrap h1 { font-family:'gmarket_b'; font-size:80px; text-align:center; padding:100px 0 0; }
+.section2 .wrap h1 span { color:#ee0027; }
+.section2 .wrap .rentcar { padding:0 0 100px; }
+.section2 .wrap .rentcar .car_list { overflow:hidden; }
+.section2 .wrap .rentcar .car_list .list { float:left; width:29.33%; margin:0 2%; }
+.section2 .wrap .rentcar .car_list .list h2 { font-family:'gmarket'; font-size:40px; text-align:center; padding:10px 0 0; border:1px solid #666; width:80%; margin:20px auto 0; }
+.section2 .wrap .rentcar .car_list .list .car_price { overflow:hidden; padding-bottom:35px; }
+.section2 .wrap .rentcar .car_list .list .car_price li { float:left; padding:25px 0 0; }
+.section2 .wrap .rentcar .car_list .list .car_price .f_right { float:right; }
+.section2 .wrap .rentcar .car_list .list .car_price .f_right p { margin-left:10px; float:left; }
+.section2 .wrap .rentcar .car_list .list .car_price .f_right span { font-size:36px; font-family:'gmarket_b'; color:#ee0027; float:left; }
+.section2 .wrap .rentcar .car_list .list .car_price li p { font-size:28px; float:left; }
+.section2 .wrap .rentcar .car_list .list .car_img { position:relative; width:100%; }
+.section2 .wrap .rentcar .car_list .list .car_img .car { position:absolute; z-index:1; }
+
+/* quick menu */
+.quick_menu { position:fixed; z-index:10; right:2.5%; top:15%; width:5%; opacity:1; }
+.quick_menu ul li {  margin:0 0 10px 0; opacity:1; }
+.quick_menu ul .quick_last {  margin:0; opacity:1; }
+
+/* 모바일 퀵메뉴 */
+.contact_form .m_quick_menu { position:fixed; bottom:234px; z-index:6; display:none; right:10px; opacity:1; }
+.contact_form .m_quick_menu ul li {  margin:0 0 10px 0; width:45px; opacity:1; }
+.contact_form .m_quick_menu ul .quick_last {  margin:0; opacity:1; }
+
+.quick_btn { position:fixed; bottom:234px; z-index:4; right:10px; display:none; opacity:1; }
+
+/* 상담신청 */
+.contact_form { position:fixed; z-index:5; background-color:#1d1d1d; width:100%; bottom:0; right:50%; transform:translate(50%,0); opacity:.9; display:none; }
+.contact_form .wrap .contact ul { overflow:hidden; }
+.contact_form .wrap .contact ul li { float:left; }
+.contact_form .wrap .contact ul .cont_pl { padding-left:6.9%; }
+.contact_form .wrap .contact ul .pr { float:right; }
+.contact_form .wrap .contact ul li img { padding:50px 0; float:left; }
+.contact_form .wrap .contact ul li .form_typecheck { padding:20px 0 20px; }
+.contact_form .wrap .contact ul li .form_typecheck ul { overflow:hidden; }
+.contact_form .wrap .contact ul li .form_typecheck ul li { float:left; }
+.contact_form .wrap .contact ul li .form_typecheck ul li input { position:absolute; opacity:0; }
+.contact_form .wrap .contact ul li .form_typecheck ul li input[type="checkbox"] + label { background-image:url('../img/check_box.png'); background-repeat: no-repeat; background-position:left 50%; padding:0px 20px 0px 30px; }
+.contact_form .wrap .contact ul li .form_typecheck ul li input[type="checkbox"]:checked + label { background-image:url('../img/check_box_on.png'); }
+.contact_form .wrap .contact ul li .form_typecheck ul li label { font-size:20px; font-weight:400; color:#fff;}
+.contact_form .wrap .contact ul li .form_carname { float:left; margin-bottom:20px; }
+.contact_form .wrap .contact ul li .form_carname h3 { float:left; font-size:25px; font-weight:400; color:#fff; margin:0 20px 0 0; line-height:50px; }
+.contact_form .wrap .contact ul li .form_carname input[type="text"] { font-size:20px; color:#fff; padding:10px 20px; background-color:#1d1d1d; border-radius:5px; width:250px; }
+.contact_form .wrap .contact ul li .form_name { float:left; }
+.contact_form .wrap .contact ul li .form_name h3 { float:left; font-size:25px; font-weight:400; color:#fff; margin:0 20px 0 20px; line-height:50px; }
+.contact_form .wrap .contact ul li .form_name input[type="text"] { font-size:20px; color:#fff; padding:10px 20px; background-color:#1d1d1d; border-radius:5px; width:250px; }
+.contact_form .wrap .contact ul li .form_tel { clear:left; }
+.contact_form .wrap .contact ul li .form_tel h3 { float:left; font-size:25px; font-weight:400; color:#fff; margin:0 20px 0 0; line-height:50px; }
+.contact_form .wrap .contact ul li .form_tel input[type="text"] { font-size:20px; color:#fff; padding:10px 20px; background-color:#1d1d1d; border-radius:5px; width:518px; }
+.contact_form .wrap .contact ul .pr .form_privacy { padding:20px 0 20px; }
+.contact_form .wrap .contact ul .pr .form_privacy input { position:absolute; opacity:0; }
+.contact_form .wrap .contact ul .pr .form_privacy input[type="checkbox"] + label { background-image:url('../img/check_box.png'); background-repeat: no-repeat; background-position:left 50%; padding:0px 0px 0px 30px; text-align:center; }
+.contact_form .wrap .contact ul .pr .form_privacy input[type="checkbox"]:checked + label { background-image:url('../img/check_box_on.png'); }
+.contact_form .wrap .contact ul .pr .form_privacy label { font-size:20px; font-weight:400; color:#fff; }
+.contact_form .wrap .contact ul .pr .form_privacy label span { cursor:pointer; }
+.contact_form .wrap .contact ul .pr .form_btn { padding-bottom:20px; }
+.contact_form .wrap .contact ul .pr .form_btn input[type="submit"] { font-family:'gmarket'; font-size:40px; color:#fff; border:none; background-color:#ee0027; padding:36px 20%; cursor:pointer; }
+
+/* 개인정보취급방침 */
+.privacy_list { width:636px; margin:0 auto; border:1px solid #ccc; overflow:hidden; position:fixed; top:25%; transform:translate(0,0); right:0; left:0; z-index:10; background-color:#fff; display:none; }
+.privacy_list .exit_btn { position:absolute; top:15px; right:15px; cursor:pointer; }
+.privacy_list h2 { font-family:'gmarket'; text-align:center; font-size:25px; padding:40px 0; }
+.privacy_list .privacy_txt { width:551px; height:211px; overflow-y:scroll; background-color:#eee; margin:0 auto; margin-bottom:40px; }
+.privacy_list .privacy_txt p { padding:20px; }
+
+/* footer */
+footer { width:100%; position:relative; background-color:#dddddd; padding-bottom:209px; }
+#foot .wrap ul { overflow:hidden; }
+#foot .wrap ul li { float:left; }
+#foot .wrap ul .foot_logo { padding:30px 0; width:230px; }
+#foot .wrap ul .foot_txt { float:right; font-size:18px; color:#666; text-align:right; padding:30px 0; }
+
+@media screen and (max-width:1310px) {
+  .wrap { width:auto; margin:0 20px; overflow:hidden; }
+
+  .contact_form .wrap ul .cont_pl { padding-left:3.9%; }
+  .contact_form .wrap .contact { margin-left:60px; }
+  .contact_form .wrap .contact ul li img { padding:30px 0; }
+  .contact_form .wrap .contact ul li .form_typecheck { padding:10px 0; }
+  .contact_form .wrap .contact ul li .form_carname { margin-bottom:10px; }
+  .contact_form .wrap .contact ul li .form_carname h3 { font-size:23px;line-height:40px; }
+  .contact_form .wrap .contact ul li .form_carname input[type="text"] { width:235px; padding:5px 10px; }
+  .contact_form .wrap .contact ul li .form_name h3 { font-size:23px;line-height:40px; }
+  .contact_form .wrap .contact ul li .form_name input[type="text"] { width:235px; padding:5px 10px; }
+    .contact_form .wrap .contact ul li .form_tel { width:100%; }
+  .contact_form .wrap .contact ul li .form_tel h3 { font-size:23px;line-height:40px; }
+  .contact_form .wrap .contact ul li .form_tel input[type="text"] { width:490px; padding:5px 10px; }
+  .contact_form .wrap .contact ul .pr { float:right; }
+  .contact_form .wrap .contact ul .cont_pl { padding-left:5.9%; width:54%; }
+  .contact_form .wrap .contact ul .pr .form_privacy { padding:10px 0; }
+  .contact_form .wrap .contact ul .pr .form_privacy label { font-size:15px; }
+  .contact_form .wrap .contact ul .pr .form_btn input[type="submit"] { padding:28px 46px; font-size:30px; }
+
+  .quick_menu { width:7%; }
+
+  .section2 .wrap .rentcar .car_list .list .car_price li p { font-size:23px; }
+
+  footer { padding-bottom:157px; }
+  #foot .wrap ul .foot_txt { padding:30px 60px; }
+  #foot .wrap ul .foot_logo { padding:30px 60px; }
+}
+@media screen and (max-width:1250px) {
+  .section2 .wrap h1 { padding:60px 0 0; font-size:50px; }
+  .section2 .wrap .rentcar { padding:0 0 60px; }
+  .section2 .wrap .rentcar .car_list .list h2 { font-size:25px; width:160px; }
+  .section2 .wrap .rentcar .car_list .list .car_price li { padding:15px 0 0; }
+  .section2 .wrap .rentcar .car_list .list .car_price .f_right p { padding:0; margin-left:3px; }
+  .section2 .wrap .rentcar .car_list .list .car_price .f_right span { font-size:26px; margin-top:3px; }
+
+  .contact_form .wrap .contact { margin-left:32px; }
+  .contact_form .wrap .contact ul .cont_pl { float:left; padding-left:0; width:70%; }
+  .contact_form .wrap .contact ul .pr { width:30%; }
+  .contact_form .wrap .contact ul li img { display:none; }
+  .contact_form .wrap .contact ul li .form_typecheck { padding:10px 0; }
+  .contact_form .wrap .contact ul li .form_carname { width:50%; }
+  .contact_form .wrap .contact ul li .form_carname h3 { font-size:20px; margin:0 10px 0 0; line-height:34px; width:50px; }
+  .contact_form .wrap .contact ul li .form_carname input[type="text"] { font-size:15px; width:calc(100% - 60px); padding:5px 10px; }
+  .contact_form .wrap .contact ul li .form_name { width:50%; }
+  .contact_form .wrap .contact ul li .form_name h3 { font-size:20px; margin:0 10px 0 10px; line-height:34px; width:50px; }
+  .contact_form .wrap .contact ul li .form_name input[type="text"] { font-size:15px; width:calc(100% - 70px); padding:5px 10px; }
+  .contact_form .wrap .contact ul li .form_tel h3 { font-size:20px; line-height:34px; width:90px; }
+  .contact_form .wrap .contact ul li .form_tel input[type="text"] { font-size:15px; width:calc(100% - 110px); padding:5px 10px; }
+  .contact_form .wrap .contact ul .pr .form_privacy { text-align:center; padding-left:20px; }
+  .contact_form .wrap .contact ul .pr .form_privacy label { font-size:15px; }
+  .contact_form .wrap .contact ul .pr .form_btn { padding-left:20px; }
+  .contact_form .wrap .contact ul .pr .form_btn input[type="submit"] { font-size:25px; padding:0; width:100%; line-height:99px; }
+
+  .quick_menu { width:7%; }
+  .quick_menu ul li { margin:0 0 10% 0; }
+
+  footer { padding-bottom:159px; }
+  #foot .wrap ul .foot_logo { padding:36px 0; }
+  #foot .wrap ul .foot_logo img { width:150px; }
+  #foot .wrap ul .foot_txt { font-size:15px; padding:25px 0; }
+}
+@media screen and (max-width:1006px) {
+  .section2 .wrap .rentcar .car_list .list .car_price li { float:initial; overflow:hidden; }
+  .section2 .wrap .rentcar .car_list .list .car_price li p { text-align:center; margin:0 auto; width:100%; }
+  .section2 .wrap .rentcar .car_list .list .car_price .f_right { float:initial; overflow:hidden; display:table; margin-right:auto; margin-left:auto; }
+  .section2 .wrap .rentcar .car_list .list .car_price .f_right span { font-size:22px; margin-top:3px; }
+  .section2 .wrap .rentcar .car_list .list .car_price .f_right p { width:auto; }
+
+  .contact_form .wrap .contact ul .pr .form_privacy { padding-left:5px; }
+  .contact_form .wrap .contact ul .pr .form_privacy label { font-size:13px; }
+  .contact_form .wrap .contact ul .pr .form_privacy input[type="checkbox"] + label { background-size:13px; padding:0px 0px 0px 20px; }
+}
+@media screen and (max-width:769px) {
+  .section2 .wrap h1 { padding:40px 0 0; font-size:30px; }
+  .section2 .wrap .rentcar { padding:0 0 40px; }
+  .section2 .wrap .rentcar .car_list .list h2 { font-size:20px; width:115px; padding:5px 0 0; }
+  .section2 .wrap .rentcar .car_list .list .car_price li { padding:5px 0 0; }
+  .section2 .wrap .rentcar .car_list .list .car_price li p { font-size:20px; }
+  .section2 .wrap .rentcar .car_list .list .car_price li span { font-size:26px; }
+  .section2 .wrap .rentcar .car_list .list .car_price .f_right p { margin-left:5px; }
+
+  .privacy_list { width:400px; }
+  .privacy_list .exit_btn { width:15px; top:10px; right:10px; }
+  .privacy_list h2 { padding:20px 0; font-size:17px; }
+  .privacy_list .privacy_txt { width:340px; margin-bottom:30px; }
+  .privacy_list .privacy_txt p { font-size:11px; padding:15px; }
+
+  .quick_menu { width:7%; }
+
+  footer { padding-bottom:224px; }
+  #foot .wrap ul .foot_txt { font-size:11px; }
+  #foot .wrap ul .foot_logo { padding:27px 0; }
+  #foot .wrap ul .foot_logo img { width:120px; }
+
+  #main .section1 { overflow:hidden; }
+  #main .section1 img { max-width:130%; width:130%; right:15%; position:relative; }
+  #main .section3 { overflow:hidden; }
+  #main .section3 img { max-width:130%; width:130%; right:15%; position:relative; }
+  #main .section4  { overflow:hidden; }
+  #main .section4 img { max-width:130%; width:130%; right:15%; position:relative; }
+}
+
+@media screen and (max-width:698px) {
+  .contact_form .wrap .contact { margin-left:0; }
+  .contact_form .wrap .contact ul .cont_pl { width:100%; float:initial; }
+  .contact_form .wrap .contact ul .pr { width:100%; }
+  .contact_form .wrap .contact ul .pr .form_privacy { padding:5px 0; }
+  .contact_form .wrap .contact ul .pr .form_btn input[type="submit"] { line-height:45px; }
+
+}
+@media screen and (max-width:569px) {
+  .section2 .wrap .rentcar .car_list .list .car_price .f_right span { font-size:21px; margin-top:4px; }
+}
+
+@media screen and (max-width:500px) {
+  .section2 .wrap h1 { padding:20px 0 0; }
+  .section2 .wrap .rentcar { padding:0 0 20px; }
+  .section2 .wrap .rentcar .car_list .list h2 { font-size:12px; width:80px; margin:10px auto 0; }
+  .section2 .wrap .rentcar .car_list .list .car_price li { padding:2px 0 0; }
+  .section2 .wrap .rentcar .car_list .list .car_price li p { font-size:10px; padding-left:0; width:100%; text-align:center; }
+  .section2 .wrap .rentcar .car_list .list .car_price .f_right span { font-size:12px; margin-top:0px; }
+
+  .contact_form .wrap .contact ul li .form_typecheck { padding:8px 0; }
+  .contact_form .wrap .contact ul li .form_typecheck ul li input[type="checkbox"] + label { background-size:15px; font-size:15px; padding:0px 15px 0px 25px; }
+  .contact_form .wrap .contact ul li .form_carname { width:100%; margin-bottom:5px; }
+  .contact_form .wrap .contact ul li .form_carname h3 { font-size:16px; width:80px; letter-spacing:25px; line-height:31px; }
+  .contact_form .wrap .contact ul li .form_carname input[type="text"] { width:calc(100% - 90px); font-size:14px; }
+  .contact_form .wrap .contact ul li .form_name { width:100%; margin-bottom:5px; }
+  .contact_form .wrap .contact ul li .form_name h3 { font-size:16px; width:80px; margin:0 10px 0 0; letter-spacing:25px; line-height:31px; }
+  .contact_form .wrap .contact ul li .form_name input[type="text"] { width:calc(100% - 90px); font-size:14px; }
+  .contact_form .wrap .contact ul li .form_tel h3{ font-size:16px; width:80px; margin:0 10px 0 0; line-height:31px; }
+  .contact_form .wrap .contact ul li .form_tel input[type="text"] { width:calc(100% - 90px); font-size:14px; }
+  .contact_form .wrap .contact ul .pr .form_btn { padding-left:0; padding-bottom:8px; }
+  .contact_form .wrap .contact ul .pr .form_btn input[type="submit"] { line-height:40px; font-size:20px; }
+
+  .privacy_list { width:280px; }
+  .privacy_list h2 { font-size:15px; }
+  .privacy_list .exit_btn { width:12px; }
+  .privacy_list .privacy_txt { width:250px; height:180px; margin-bottom:15px; }
+  .privacy_list .privacy_txt p { padding:10px; }
+
+  .quick_menu { display:none; }
+  .quick_btn { display:block; }
+  .quick_btn ul li { width:45px; }
+
+  /* .m_quick_menu { display:block; } */
+
+  footer { padding-bottom:230px; }
+  #foot .wrap ul .foot_txt { padding:20px 0; font-size:10px; }
+  #foot .wrap ul .foot_logo { padding:30px 0 25px; width:90px; }
+  #foot .wrap ul .foot_logo img { width:90px; }
+}

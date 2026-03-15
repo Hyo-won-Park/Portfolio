@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WOOZOOMUSIC">
+  <meta property="og:description" content="WOOZOOMUSIC">
+  <meta property="og:image" content="img/favicon/og_img.png">
+  <meta property="og:url" content="">
+
+  <meta name="description" content="WOOZOOMUSIC" />
+  <meta name="keywords" content="WOOZOOMUSIC" />
+  <meta name="author" content="WOOZOOMUSIC" />
+
+  <title>WOOZOOMUSIC</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+</head>
+
+
+<body>
+  <div class="float_btn" id="float_btn">
+    <ul>
+      <li>
+        <a href="#"><img src="img/float_01.png" onmouseover="this.src='img/float_01_on.png'" onmouseout="this.src='img/float_01.png'"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/float_02.png" onmouseover="this.src='img/float_02_on.png'" onmouseout="this.src='img/float_02.png'"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/float_03.png" onmouseover="this.src='img/float_03_on.png'" onmouseout="this.src='img/float_03.png'"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/float_04.png" onmouseover="this.src='img/float_04_on.png'" onmouseout="this.src='img/float_04.png'"></a>
+      </li>
+    </ul>
+  </div>
+
+  <header id="header">
+    <div class="wrap">
+      <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+      <div class="mobile_menu_btn" id="open"><img src="img/menu_btn.png"></div>
+      <div class="mobile_back_btn" id="back"><img src="img/back_btn.png"></div>
+      <div class="nav">
+        <ul>
+          <li><a href="#outline">OUTLINE</a></li>
+          <li><a href="#platform">PLATFORM</a></li>
+          <li><a href="#system">SYSTEM FLOW</a></li>
+          <li><a href="#copyright">COPYRIGHT</a></li>
+          <li><a href="#analysis">ANALYSIS</a></li>
+          <li><a href="#loadmap">LOADMAP</a></li>
+          <li><a href="#contactus">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="lang_nav">
+        <ul>
+          <li class="on"><a href="index.html">KO</a></li>
+          <li><a href="eng.html">EN</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    $(function(){
+      $(window).scroll(function(){
+        var num = $(this).scrollTop();
+        if( num > 1 ){
+          $("#header").addClass('on');
+        }else{
+          $("#header").removeClass('on');
+        }
+      });
+    });
+
+    $(function(){
+      $('#open').click(function() {
+        $('.nav, .lang_nav, .mobile_back_btn').addClass('on');
+      });
+      $('#back, #header .nav ul li').click(function() {
+        $('.nav, .lang_nav, .mobile_back_btn').removeClass('on');
+      });
+    });
+  </script>
+
+  <section id="main">
+    <article class="visual">
+      <div class="wrap">
+        <div class="main_visual">
+          <div class="visual_tit scale-on-scroll"><img src="img/main_txt.png"></div>
+          <div class="paper_btn up-on-scroll">
+            <a href="woozoo_whitepaper_1,0_KO.pdf" target="_blank">WHITE PAPER</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="outline" id="outline">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star_white.png"></div>
+          <h1 class="white opacity-on-scroll">OUTLINE</h1>
+        </div>
+        <div class="outline_cont">
+          <div class="cont_txt up-on-scroll">
+            <ul>
+              <li>스타와 팬,</li>
+              <li class="line">&nbsp;</li>
+              <li>가상현실에서 만나다.</li>
+            </ul>
+          </div>
+          <div class="cont_cont">
+            <div class="cont_left scale-on-scroll">
+              <img src="img/outline.png">
+            </div>
+            <div class="cont_right left-on-scroll">
+              <p>
+                우주뮤직(WZM)을 한마디로 정의하면, 메타버스와 블록체인 기술
+기반으로 스타와 팬을 연결해주는 플랫폼이라고 할 수 있다. 스타와
+팬은 우주뮤직의 가장 중요한 참여자로, 이들은 우주뮤직 프로토콜을
+통해 다양한 방식으로 소통하며 다면적인 관계를 형성할 수 있다.
+또한 광고주 역시 우주뮤직의 참여자 중 하나이며, 플랫폼의 기초적인
+이코노미를 구축하는 역할을 담당한다.<br><br>
+
+우주뮤직의 생태계 기본 구성요소는 크게 1) 콘텐츠 생산자(CP) : 가수,
+음원 2) 콘텐츠 소비자(CC) : 유저, 팬 3) 광고주(SPONSOR) 등이 있다.
+이 3개 기본 구성요소는 우주뮤직 플랫폼의 기초를 설계하는데 필요한
+절대 요건이다.<br><br>
+
+우주뮤직의 시스템 기본 구성요소는 1) 메타버스 : VR가상현실을
+구현하고, 유저를 아바타화 시켜 가상세계에 투영한다. 2) 블록체인 :
+콘텐츠 생산자의 창작 산물에 대한 원 저작권을 보호하며, 플랫폼
+내 가상자산을 암호화폐로 대처하고 투명하고 합리적인 리워드 보상
+체계를 적용시킨다. 이 2가지 시스템 구성요소는 핵심적인 첨단 기술
+기반의 신뢰성을 바탕으로 두고 있다.<br><br>
+
+우주뮤직 플랫폼의 비전은 “ 엔터테인먼트 시장에서의 새로운 언택트
+산업문화의 안착과 창작자들의 합리적인 보상 시스템의 완성 ” 이다.
+이로써 새로운 음악 선도문화 조성을 통해 보다 투명한 문화 리더
+플랫폼으로 발돋움 하겠다
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="platform" id="platform">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star.png"></div>
+          <h1 class="opacity-on-scroll">PLATFORM KEY FEATURES</h1>
+        </div>
+        <div class="platform_cont right-on-scroll">
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide_left">
+                  <img src="img/platform_01.png">
+                </div>
+                <div class="slide_right">
+                  <h3>스타와 팬의 만남</h3>
+                  <h2>VR-콘서트</h2>
+                  <p>VR콘서트는 공연, 미팅, 대화 등의 스타와 팬 간의 직접적인 다이렉트 스폿을 제공한다.
+                  매일 스타들의 공연히 개최되고, 팬미팅을 통해 소셜 언택트 기술로 가상현실 모든 것이 가능해진다.
+                  퍼블릭 공간 제공으로 자신만의 아바타(Avatar)를 커스텀 생성이 가능하다. 실시간 스트리밍
+                  송출을 통해 토커(talker)와 리스너(listener)간 간극 없는 소통이 가능하다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_left">
+                  <img src="img/platform_02.png">
+                </div>
+                <div class="slide_right">
+                  <h3>팬덤 소셜 커뮤니티</h3>
+                  <h2>VR-팬덤</h2>
+                  <p>VR팬덤은 가수별, 장르별 등의 카테고리에
+                    대한 팬덤을 구축하고 오픈형 소셜 미디어
+                    기능을 제공한다. 스타라는 공통분모
+                    스토리를 이끌 수 있는 리얼리티를 제공하고,
+                    아바타 간의 적극적인 의사소통이 가능하다.
+                    개인 맞춤형 가상 공간은 자신의 끼와 재능을
+                    표현한다.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_left">
+                  <img src="img/platform_03.png">
+                </div>
+                <div class="slide_right">
+                  <h3>세상에 하나뿐인 선물</h3>
+                  <h2>VR-마켓</h2>
+                  <p>
+                    VR마켓은 스타들의 애장품, 스타의 아바타 신체,
+                    공연 티켓 등의 다양한 상품을 팬들에게
+                    제공하는 마켓 플레이스이다. 아이템을
+                    판매하고 소유권을 보호 받는 다양한 아이템이
+                    거래되는 공간으로 유저는 보팅(voting)을
+                    통해 마켓 상품에 대한 적극적인 푸시와
+                    어트랙팅이 가능하다. 모든 상품의 대한
+                    구매 재화는 암호화폐로 통용된다
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="system" id="system">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star_white.png"></div>
+          <h1 class="white opacity-on-scroll">SYSTEM FLOW</h1>
+        </div>
+        <div class="system_cont scale-on-scroll">
+          <img src="img/system.png">
+          <p class="up-on-scroll">
+            우주뮤직(WZM) 플랫폼 서비스는 팬과 스타가 플랫폼내 콘텐츠 생산, 소비 등의 활동하는 것에서부터 시작된다. 모든 활동은 WZM 프로토콜상에서 유저들의 활동내역을 세세히 분석하여 차등적으로 합리적인 토큰리워드를 제공한다. 광고주는 이러한 액팅과 리액팅 간의 활동들의 트래픽을 이용하고 플랫폼에 광고를 의뢰하고 WZM 프로토콜에 의해 맞춤형 AI 광고 브랜딩이 가능하다. 모든 광고 활동 내역 또한 블록체인에 기록됨으로써 투명하고 신뢰도 높은 광고효과 피드백을 받을 수 있다.<br><br>
+            아티스트(콘텐츠 생산자)는 데이터를 WZM 프로토콜상에 기록할지를 결정하게 된다. 데이터를 전혀 업로드하지 않을 수도 있고, 전체 데이터를 업로드 할 수도 있다. 일부 데이터를 지우고 업로드 할 수도 있다.WZM 프로토콜은 철저히 유저에게 데이터에 대한 선택권을 부여함으로써 소비자의 데이터 소유권을 실현할수 있다. 유저가 결제 데이터의 일부 또는 전부를 올리기로 한 경우에도 익명화 또는 암호화를 통하여 사용자의 개인 정보가 노출되지 않도록 한다. WZM 플랫폼은 유저가 블록체인에 결제 데이터를 업로드 하는 경우에 그에 대한 보상으로서 WZM 토큰을 지급함으로써 더 많은 콘텐츠 생산 및 활동을 유도할 것이다. 유저에게 지급되는 WZM 토큰은 블록체인 자체의 인플레이션을 통해 확보된 우주뮤직 풀에서 지급된다.스폰서들을 위해 블록체인에 저장된 유저의 활동 데이터들은 주로 광고의 집행에 활용될 것이다. 광고주들은 공개된 활동 데이터를 가공하고 광고 목적에 맞는 소비자를 구분하여 이들을 대상으로 WZM 네트워크상에서 광고를 진행할 수 있다. 대부분의 경우 광고주가 직접 데이터를 가동하기 어려울 수 있는데, 이 경우는중개 광고업계(파트너사) 풀을 이용하여 조정 변경할 수 있다.<br><br>
+
+            유저층인 팬과 아티스트는 앞서 언급한 콘텐츠 생산, 소비 등의 결과에 대한 피드백으로 리턴 받은 WZM 토큰으로 3가지 영역에서 사용이 가능하다. 먼저, 1) WZM 토큰이 상장된 거래소를 통하여 현금화가 가능하다. 2) VR-마켓에서 일정한 지분증명(POS)를 통하여 거버넌스로 참여하고 마켓에 등록될 아티스트 또는 상품후보군에 대해 보팅(VOTING)이 가능하다. 이러한 투표권 행사를 통해 우주뮤직 디지털 사회에서 민주주의적 의회 대표로서 역할과 책임감을 느낄 수 있다.  마지막은 3) WZM 토큰으로 마켓 플레이스에서 상품을 구매또는 저작권 분할 획득 결제가 가능하다. 이는 플랫폼에서 가장 중요시하는 토큰 Ecosystem의 핵심이기도하다.
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="copyright" id="copyright">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star.png"></div>
+          <h1 class="opacity-on-scroll">COPYRIGHT PROTECTION OF CREATIONS</h1>
+        </div>
+        <div class="copyright_cont scale-on-scroll">
+          <img src="img/copyright.png">
+          <p class="up-on-scroll">
+            우주뮤직 플랫폼의 새로운 가상현실 콘텐츠 생태계에서 생성되는 음원과 아바타 콘텐츠의 소유권은 스마트 컨트랙트로 권리가 보호된다. CP(콘텐츠 생산자)가 자신의 아바타를 생성하거나 음원을 생산 및 등록하게 되면 WZM 데이터 베이스를 통해 블록체인에 기록되어야 할 필수 항목을 재정렬 하게 된다. 재정렬이 완료된DB 내역은 WZM 블록체인 프로토콜을 통해 폴카닷넷으로 전송되고, 다음 생성될 블록 기록 준비를 위해 펜딩(Pending) 상태로 기록물을 대기 및 파킹 상태로 놓는다. 이때 발생하는 기록에 대한 fee는 WZM 플랫폼에서 대납으로 처리하여 지원한다. 이후 다음 폴카닷 블록이 생성됨과 동시에 관련 저작물의 내역을 기록하고, 기록 여부 최종상태를 확인하기 위해 폴카닷 스캔에서 블록의 기록여부와 컨트랙트 최종 상태를 컨펌한다. 최종 기록이 완료된 이후 WZM 플랫폼에서 CP의 기여도를 측정하여 즉시 WZM 토큰으로 리워드를제공하면 1회의 저작권 보호 사이클이 최종 완성된다.<br><br>
+
+            우주뮤직(WZM) 네트워크는 생태계 참여자는 누구나 VR 콘텐츠 생산자가 될 수 있으며, 스마트 컨트랙트를 통해 지속적인 수익 창출이 가능하다. 소비자들은 콘텐츠를 임대하거나 영구 구매할 수 있다. 블록체인을 활용해 가상현실과 관련된 시장 생태계의 건전한 조성을 위하여 콘텐츠 생산과 관련된 저작권을 보호하는 동시에, 콘텐츠 생산자가 더 많은 콘텐츠를 생산할 수 있도록 장려하여 VR 산업 전체가 선순환이 되도록 지원한다
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="analysis" id="analysis">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star.png"></div>
+          <h1 class="opacity-on-scroll">WINNING STRATEGIES THROUGH COMPETITIVE ANALYSIS</h1>
+        </div>
+        <div class="analysis_cont">
+          <div class="analysis_cont_left right-on-scroll">
+            <img src="img/analysis.png">
+          </div>
+          <div class="analysis_cont_right left-on-scroll">
+            <h3>경쟁사 분석을 통한 승리 전략</h3>
+            <p>
+              우주뮤직(WZM)의 라이벌은 멀티버스 기반 3D 아바타 ‘제페토’ 이다.
+제페토는 출시 2개월 만에 글로벌 다운로드 수 300만을 기록하고,
+미국, 일본, 한국을 비롯해 전 세계 35개국에서 무료 다운로드 순위 1위를
+기록한 앱이다. 제페토는 3D 아바타만을 만들어주는 것에서 그치지 않는다.
+한 장의 멋진 3D 아바타 이미지뿐아니라 영상까지 만들어주고 이를 SNS에
+손쉽게 공유할 수도 있다. 또한 앱 내에서 수많은 친구들과 아바타를 이용해
+함께 놀 수 있는 플랫폼까지 구축한 것으로 마치 예전 싸이월드의 미니룸에
+친구들이 방문해 같이 콘텐츠를 공유하는 것과 비슷하다. 또 다른 특징은
+앱 내에서 사용자들끼리 서로 호출해 아바타 끼리 만남을 장려하고 있다.
+이러한 제페토는 1인칭 시점의 나를 가상현실에서 보다 유니크하게
+투영한다는 것이 Z세대에게 가장 큰 매력이라 할 수 있다. 하지만,
+이러한 플랫폼에도 단점이 있으며, 이러한 부분을 분석하여공략한다면,
+후발 주자인 우주뮤직은 멀티버스 가상현실 업계 1위를 달성할 수 있을 것이다
+            </p>
+          </div>
+          <div class="analysis_swip_cont up-on-scroll">
+            <div class="swiper-container analy">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide_width">
+                    <img src="img/ana_01.png">
+                    <h3>내가 주인공인 아바타 세상 VS 스타 & 팬덤이 공존하는 세상</h3>
+                    <p>
+                      제페토의 가장 큰 특징이자 약점은 바로 내가 주인공이 된다는 것이다. 내가 중심이 되는 특징이 오히려 좋지 못한 상황으로 바뀌기도 한다. 이기적인 관점이 도드라지다 보니 플랫폼 내에서 욕설과 상호 비판이 많아 플랫폼의 생태계가 점차 퇴색되어 지고 있다. 반면에 우주뮤직은 나의 우상인 스타를 기점으로 내가 이벤트에 참여한다는 관점이기 때문에 비판보다는 응원과 화합이라는 메시지를 플랫폼 내 성향으로 담고 있다. 이러한 장점은 보다 밝고 유쾌한 가상현실의 놀이문화를 조성한다
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide_width">
+                    <img src="img/ana_02.png">
+                    <h3>스테이블 포인트 VS 암호화폐 유티리티 토큰</h3>
+                    <p>
+                      제페토는 법정화폐 충전을 통한 아이템 구매결제 이코노미이다. 또한 기성 데이팅 앱 처럼 아이템 결제 유도가 심하고 아이템의 가격이 합리적이지 못하다. 포인트를 모으는 방법도 본인의 결제액에 비해서 터무니없이 낮아 정당한 보상을 받기 힘든 시스템이다. 이러한 부분은 초기에는 영향력이 없을지 모르지만, 점차플랫폼이 성장하는데 유저들의 네거티브한 영향으로 플랫폼 성장에 악영향을 미칠 것이다.<br><br>
+
+                      우주뮤직은 블록체인의 암호화폐 생태계를 기반으로 투명하고 합리적인 리워드를 제공한다. 또한 아이템 결제를 목적으로 과도한 결제유도 행위는 목적으로 비즈니스를 진행하지 않고 정당한 아바타 육성과 이벤트참여로 우주토큰(WZM)을 획득하고 사용할 수 있다.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide_width">
+                    <img src="img/ana_03.png">
+                    <h3>무거운 DB 플랫폼 VS 가벼운 DB 플랫폼</h3>
+                    <p>
+                      제페토는 3D 모델링 데이터와 카메라, 오디오 연동에서 많은 오류와 느림 현상을 초래하고 있다. 이는 무거운 데이터 설계로 인한 유저 인터페이스에 과도한 데이터 병목 현상을 초래하기 때문이다. 우주뮤직은 분산화 DB 설계를 통하여 프론트엔드(frontEnd)단에 트레픽 발생을 최소화 시켜 유저가 플랫폼을 사용하는데 지장이 없도록 개발된다. 우주뮤직 서버 역시 지속적으로 확장하여 DB병목 현상을 감소시키도록 더욱 최적화시킬 수 있을 것이다
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"><img src="img/next_btn.png"></div>
+              <div class="swiper-button-prev"><img src="img/prev_btn.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ana_bg"></div>
+    </article>
+    <article class="loadmap" id="loadmap">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star_white.png"></div>
+          <h1 class="white opacity-on-scroll">LOADMAP</h1>
+        </div>
+        <div class="loadmap_cont">
+          <div class="loadmap_cont_left right-on-scroll">
+            <ul>
+              <li>2021</li>
+              <li><img src="img/loadmap_line.png"></li>
+              <li>2022</li>
+              <li><img src="img/loadmap_line.png"></li>
+              <li>2023</li>
+              <li><img src="img/loadmap_line.png"></li>
+              <li>2024</li>
+              <li><img src="img/loadmap_line.png"></li>
+              <li>2025</li>
+              <li><img src="img/loadmap_line.png"></li>
+              <li>2026</li>
+            </ul>
+          </div>
+          <div class="loadmap_cont_right left-on-scroll">
+            <ul>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_01.png">
+                </div>
+                <div class="map_right">
+                  <h2>2021</h2>
+                  <h3>BUILD UP</h3>
+                  <p>
+                    프로젝트 오픈<br>
+                    백서 1.0<br>
+                    플랫폼 개발 기획<br>
+                    프라이빗 세일<br>
+                    거래소 상장
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_02.png">
+                </div>
+                <div class="map_right">
+                  <h2>2022</h2>
+                  <h3>PLATFORM START</h3>
+                  <p>
+                    우주뮤직 App 출시<br>
+                    플랫폼 퍼블릭 테스트<br>
+                    백서 2.0<br>
+                    국내 홍보/마케팅 돌입<br>
+                    메이저 거래소 상장
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_03.png">
+                </div>
+                <div class="map_right">
+                  <h2>2023</h2>
+                  <h3>UPGRADE</h3>
+                  <p>
+                    우주뮤직 PC App 출시<br>
+                    동남아 진출<br>
+                    고도화 2단계 업그레이드<br>
+                    거래소 상장 확장
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_04.png">
+                </div>
+                <div class="map_right">
+                  <h2>2024</h2>
+                  <h3>GLOBAL PLATFORM</h3>
+                  <p>
+                    영미권/유럽 진출<br>
+                    유저 +10,000,000 명<br>
+                    일일 결제 +50,000 Tx<br>
+                    시리즈 A+ 투자유치
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_05.png">
+                </div>
+                <div class="map_right">
+                  <h2>2025</h2>
+                  <h3>UNICORN ASCENSION</h3>
+                  <p>
+                    유니콘 등급(+1조)<br>
+                    고도화 3단계 업그레이드<br>
+                    시리즈 B+ 투자유치
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="map_left">
+                  <img src="img/loadmap_06.png">
+                </div>
+                <div class="map_right">
+                  <h2>2026</h2>
+                  <h3>ipo</h3>
+                  <p>
+                    한국 주식 거래소 상장<br>
+                    (기업공개)
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="contactus" id="contactus">
+      <div class="wrap">
+        <div class="tit">
+          <div class="tit_top rotate-on-scroll"><img src="img/star_white.png"></div>
+          <h1 class="white opacity-on-scroll">CONTACT US</h1>
+        </div>
+        <form class="contact"  action="/save.php"  method="post"  onsubmit="return send()">
+        <div class="cont_all up-on-scroll">
+          <div class="cont_left">
+            <img src="img/cont_logo.png">
+          </div>
+          <div class="cont_right">
+            <ul>
+              <li><input type="text" name="name" placeholder="Name" required></li>
+              <li><input type="text" name="email" placeholder="E-mail Address" required></li>
+            </ul>
+            <textarea placeholder="Message" name="message" required></textarea>
+            <button type="submit">SUBMIT</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </article>
+  </section>
+  <footer id="foot">
+    <div class="wrap">
+      <div class="foot_sns">
+        <ul>
+          <li><a href="#"><img src="img/sns_01.png"></a></li>
+          <li><a href="#"><img src="img/sns_02.png"></a></li>
+          <li><a href="#"><img src="img/sns_03.png"></a></li>
+          <li><a href="#"><img src="img/sns_04.png"></a></li>
+          <li><a href="#"><img src="img/sns_05.png"></a></li>
+        </ul>
+        <p>COPYRIGHT 2020 WOOZOOMUSIC INC. All RIGHTS RESERVED</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });
+
+  var swiper = new Swiper(".analy", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+
+  });
+
+  $(document).ready(function() {
+   $(window).scroll( function(){
+     $('.up-on-scroll').each( function(i){
+        var bottom_of_element = $(this).offset().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if( bottom_of_window > bottom_of_element ){
+           $(this).addClass('on')
+        } else {
+          $(this).removeClass('on')
+        }
+     });
+   });
+ });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.left-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.right-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.scale-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.rotate-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.opacity-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+
+  $(window).load(function(){
+    $('#outline .tit_top, #outline h1.white, .outline_cont .cont_txt, .outline_cont .cont_cont .cont_left, .outline_cont .cont_cont .cont_right, .visual_tit, .paper_btn').addClass('on');
+  });
+
+  $(function(){
+$(window).scroll(function(){
+  var num = $(this).scrollTop();
+  if( num > 500 ){
+    $("#float_btn").addClass('on');
+  }else{
+    $("#float_btn").removeClass('on');
+  }
+});
+});
+
+  $(function() {
+
+   var $w = $(window),
+     footerHei = $('footer').outerHeight(),
+     $banner = $('#float_btn');
+
+   $w.on('scroll', function() {
+
+     var sT = $w.scrollTop();
+     var val = $(document).height() - $w.height() - footerHei;
+
+     if (sT >= val)
+         $banner.addClass('plus')
+     else
+       $banner.removeClass('plus')
+
+   });
+
+  });
+
+</script>
+
+</html>

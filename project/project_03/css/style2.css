@@ -1,0 +1,594 @@
+/* 헤더 */
+#header div { float:left; }
+#header .h_logo { padding:0 70px 0 100px; line-height:78px; }
+#header .h_logo img { vertical-align:middle; }
+#header .h_menu ul { overflow:hidden; }
+#header .h_menu ul li {  float:left; padding:0 19px; line-height:78px; }
+#header .h_menu ul li:hover a {  color:#7ac2e6; }
+#header .h_menu ul li a { color:#fff; font-size:20px; font-weight:400; }
+#header .h_lang { float:right; padding: 0 100px 0 0; }
+#header .h_lang ul { overflow:hidden; }
+#header .h_lang ul li { float:left; color:#fff; font-size:20px; font-weight:400; line-height:78px; }
+#header .h_lang ul li a { color:#707070; padding:7px; font-size:20px; font-weight:400; }
+#header .h_lang ul li:hover a { color:#7ac2e6; }
+#header .h_lang ul li.on:hover a { color:#7ac2e6; }
+#header .h_lang ul li.on a { font-weight:700; color:#fff; }
+
+/* 모바일메뉴 */
+#header .m_btn { float:right; line-height:45px; padding:0 30px; display:none; }
+#header .m_btn img { vertical-align:middle; }
+
+.m_menu { position:relative; z-index:50; background-color:#000; position:fixed; width:70%; height:100vh; right:-100%; overflow:hidden; }
+.m_menu.on { right:0; }
+.m_menu .backbtn { position:relative; padding:15px; float:right; }
+.m_menu .m_lang { overflow:hidden; padding:20px; clear:right; }
+.m_menu .m_menulist li { margin:20px 30px; }
+.m_menu .m_menulist li a { color:#fff; font-size:20px; }
+.m_menu .m_lang li { float:left; color:#fff; }
+.m_menu .m_lang li a { font-size:15px; padding:10px; color:#fff; font-weight:200; }
+.m_menu .m_lang li.on a { font-weight:700; }
+
+/* sec1 */
+#main .section1 .wrap .sec1_left { float:left; padding:340px 0 220px 0; }
+#main .section1 .wrap .sec1_left>img { padding:0 0 40px 0; }
+#main .section1 .wrap .sec1_left ul { overflow:hidden; }
+#main .section1 .wrap .sec1_left ul li { float:left; padding:0 30px 0 0; }
+#main .section1 .wrap .sec1_left a.download { color:#fff; line-height:55px; display:block; text-align:center; width:calc(100% - 30px); background-color:#fff; color:#222; border-radius:10px; margin:30px 0 0; font-size:22px; }
+#main .section1 .wrap .sec1_right { float:right; padding:300px 0 130px 0; }
+#main .section1 .wrap .scroll { clear:right; text-align:center; padding:0 0 30px 0; animation:scroll 1.2s linear infinite; opacity:1 !important; }
+#main .section1 .wrap .scroll:hover { opacity:.3; transition:all .3s; }
+#main .section1 .wrap .scroll p { color:#fff; font-size:20px; font-weight:400; }
+#main .section1 .wrap .scroll img { padding:0 0 10px 0; }
+@keyframes scroll {
+  0% { transform:translateY(-30px); }
+  50% { transform:translateY(-10px); }
+  100% { transform:translateY(-30px); }
+}
+
+
+/* sec2 */
+#main .section2 .wrap .sec2_left { padding:160px 0 0 0; float:left; }
+#main .section2 .wrap .sec2_left h1 { font-size:30px; color:#fff; font-weight:400; }
+#main .section2 .wrap .sec2_left img { padding:350px 0 0 120px; }
+#main .section2 .wrap .sec2_left h1 span { font-family:'YJD'; font-size:60px; }
+#main .section2 .wrap .sec2_right { padding:160px 0 70px 0; float:right; }
+#main .section2 .wrap .sec2_right ul li { overflow:hidden; background-color:rgba(255,255,255,.8); border-radius:10px; margin:0 0 30px 0; width:800px; }
+#main .section2 .wrap .sec2_right ul li img { float:left; padding:20px 40px; }
+#main .section2 .wrap .sec2_right ul li img.sec2_line { padding:45px 40px; }
+#main .section2 .wrap .sec2_right ul li img.sec2_line2 { padding:45px 40px; }
+#main .section2 .wrap .sec2_right ul li .sec2_txt { float:left; padding:19px 0; width:60%; }
+#main .section2 .wrap .sec2_right ul li .sec2_txt h2 { font-size:35px; color:#0d417e; font-weight:500; }
+#main .section2 .wrap .sec2_right ul li .sec2_txt p { font-size:25px; color:#0d417e; font-weight:200; }
+
+/* sec3 */
+#main .section3 .wrap .sec3_left { padding:160px 0 0 0; float:left; }
+#main .section3 .wrap .sec3_left h1 { font-size:30px; color:#0d417e; font-weight:400; }
+#main .section3 .wrap .sec3_left h1 span { font-family:'YJD'; font-size:60px; }
+#main .section3 .wrap .sec3_left .serv_3 { background-color:#0d417e; text-align:center; margin:110px 0 0 0; }
+#main .section3 .wrap .sec3_left .serv_3 h2 { font-size:30px; color:#fff; font-weight:400; padding:40px 0 30px 0; }
+#main .section3 .wrap .sec3_left .serv_3 img { padding:0 0 40px 0; }
+#main .section3 .wrap .sec3_left .serv_3 span { font-weight:700; }
+#main .section3 .wrap .sec3_right { padding:160px 0 70px 0; float:right; }
+#main .section3 .wrap .sec3_right ul li { float:left; padding:0 0 0 20px; text-align:center; }
+#main .section3 .wrap .sec3_right ul li p { font-size:25px; font-weight:400; color:#fff; background-color:#0d417e; padding:20px 0; border-radius:0 0 10px 10px; }
+
+/* sec4 */
+#main .section4 .wrap h1 { font-size:30px; color:#fff; font-weight:400; padding:160px 0 30px 0; }
+#main .section4 .wrap h1 span { font-family:'YJD'; font-size:60px; }
+#main .section4 .wrap .sec4_left { float:left; padding:0 0 80px 0; }
+#main .section4 .wrap .sec4_right { float:right; width:50%; }
+#main .section4 .wrap .sec4_right ul li { overflow:hidden; }
+#main .section4 .wrap .sec4_right ul li span { font-family:'YJD'; float:left; font-size:30px; color:#0d417e; background-color:#fff; border-radius:30px; text-align:center; width:185px; padding:11px 0; }
+#main .section4 .wrap .sec4_right ul li p { float:left; color:#fff; font-size:25px; font-weight:200; margin:-3px 0 0 30px; line-height:30px; width:65%; }
+#main .section4 .wrap .sec4_right ul li { padding:0 0 30px 0 ; }
+
+.sec4_bg { position:absolute; z-index:1; }
+.sec4_bg img { width:100%; }
+
+/* sec5 */
+#main .section5 .wrap h1 { font-size:30px; color:#0d417e; font-weight:400; padding:160px 0 40px 0; text-align:center; }
+#main .section5 .wrap h1 span { font-family:'YJD'; font-size:60px; }
+#main .section5 .wrap .sec5_txt { background-color:#0d417e; margin:0 0 160px 0;}
+#main .section5 .wrap .sec5_txt p { color:#fff; font-size:25px; line-height:40px; text-align:center; padding:60px 0; font-weight:200; }
+#main .section5 .wrap .sec5_txt p span { font-weight:700 }
+
+/* sec6 */
+.sec6_bg { position:absolute; z-index:1; margin:-78px 0 0 0; }
+.sec6_bg img { width:100%; }
+
+#main .section6 .wrap h1 { font-size:30px; color:#fff; font-weight:400; padding:80px 0 0 0; text-align:center; }
+#main .section6 .wrap h1 span { font-family:'YJD'; font-size:60px; }
+#main .section6 .wrap .sec6_txt { background-color:#fff; overflow:hidden; text-align:center; margin:40px 0 60px 0; }
+#main .section6 .wrap .sec6_txt ul { overflow:hidden; position:relative; width:1135px; margin:0 auto; }
+#main .section6 .wrap .sec6_txt ul li { float:left; }
+#main .section6 .wrap .sec6_txt ul li.sen_left img { margin:40px 20px 0 0; }
+#main .section6 .wrap .sec6_txt ul li.sen_right img { margin:90px 0 0 20px; }
+#main .section6 .wrap .sec6_txt ul li p { font-size:30px; font-weight:200; color:#0d417e; padding:60px 0; width:1020px; }
+#main .section6 .wrap .sec6_txt ul li p span { font-weight:700; }
+#main .section6 .wrap .sec6_list ul { overflow:hidden; margin:0 auto; width:67%; }
+#main .section6 .wrap .sec6_list ul li { float:left; text-align:center; padding:0 40px; width:24%; }
+#main .section6 .wrap .sec6_list ul li img { padding:0 0 30px; }
+#main .section6 .wrap .sec6_list ul li p { text-align:center; color:#fff; font-size:25px; line-height:40px; font-weight:200; padding:0 0 40px 0; }
+#main .section6 .wrap .sec6_more { padding:0 0 80px 0; }
+#main .section6 .wrap .sec6_more ul { overflow:hidden; }
+#main .section6 .wrap .sec6_more ul li { float:left; width:39%; padding:40px; border:1px solid #fff; border-radius:10px; margin:0 60px 0 0; }
+#main .section6 .wrap .sec6_more ul li.more2 { padding:58px 40px; }
+#main .section6 .wrap .sec6_more ul li .more_txt { overflow:hidden; padding:0 0 30px 0; }
+#main .section6 .wrap .sec6_more ul li .more_txt h2 { font-size:35px; font-weight:700; color:#fff; }
+#main .section6 .wrap .sec6_more ul li .more_txt img { float:left; margin:10px 20px 0 0; }
+#main .section6 .wrap .sec6_more ul li p { font-size:25px; font-weight:200; color:#fff; }
+
+/* sec7 */
+#main .section7 .wrap h1 { font-size:30px; color:#fff; font-weight:400; padding:160px 0 40px 0; }
+#main .section7 .wrap h1 span { font-family:'YJD'; font-size:60px; }
+#main .section7 .wrap .year_center { width:7px; height:67.5%;; background-color:#fff; border-radius:4px; position:absolute; left:50%; transform:translate(-50%,0); }
+#main .section7 .wrap .year_center2 { position:absolute; left:50%; transform:translate(-50%,0); }
+#main .section7 .wrap .year_center2 ul li.cent01 { padding:60px 0; }
+#main .section7 .wrap .year_center2 ul li.cent02 { padding:55px 0; }
+#main .section7 .wrap .year_center2 ul li.cent03 { padding:65px 0; }
+#main .section7 .wrap .year_center2 ul li.cent04 { padding:55px 0; }
+#main .section7 .wrap .year_center2 ul li.cent05 { padding:60px 0; }
+#main .section7 .wrap .year_center2 ul li.cent06 { padding:57px 0; }
+#main .section7 .wrap .year_center2 ul li.cent07 { padding:57px 0; }
+#main .section7 .wrap .road_year { overflow:hidden; padding:0 0 150px 0; }
+#main .section7 .wrap .road_year .map_left { float:left; width:100%; }
+#main .section7 .wrap .road_year .map_left .map_01 { float:left; background-color:#fff; width:43%; border-radius:10px; }
+#main .section7 .wrap .road_year .map_left .map_01 h3 { font-size:20px; font-weight:200; color:#0d417e; float:right; padding:30px 40px; }
+#main .section7 .wrap .road_year .map_left .map_01 h3 span { font-size:30px; font-weight:700; color:#000; }
+#main .section7 .wrap .road_year .map_left .map_01 ul { padding:40px 0; }
+#main .section7 .wrap .road_year .map_left .map_01 ul li { font-size:20px; font-weight:200; color:#0d417e; text-align:right; }
+#main .section7 .wrap .road_year .map_left .map_01 ul.mobile_map { display:none; }
+#main .section7 .wrap .road_year .map_left .map_01 ul.mobile_map li { font-size:20px; font-weight:200; color:#0d417e; text-align:left; }
+#main .section7 .wrap .road_year .map_left .mal_arrow { float:left; line-height:138px; }
+#main .section7 .wrap .road_year .map_left .mal_arrow img { vertical-align:middle ; }
+#main .section7 .wrap .road_year .map_right { width:100%; position:relative; left:55%; float:right; }
+#main .section7 .wrap .road_year .map_right .mal_arrow2 { float:left; line-height:147px; }
+#main .section7 .wrap .road_year .map_right .mal_arrow2 img { vertical-align:middle; }
+#main .section7 .wrap .road_year .map_right .map_02 { float:left; background-color:#fff; width:43%; border-radius:10px; }
+#main .section7 .wrap .road_year .map_right .map_02 h3 { font-size:20px; font-weight:200; color:#0d417e; float:left; padding:30px 40px; }
+#main .section7 .wrap .road_year .map_right .map_02 h3 span { font-size:30px; font-weight:700; color:#000; }
+#main .section7 .wrap .road_year .map_right .map_02 ul { padding:30px 0; }
+#main .section7 .wrap .road_year .map_right .map_02 ul li { font-size:20px; font-weight:200; color:#0d417e; text-align:left; }
+#main .section7 .wrap .road_year .map_left .map_03 { float:left; background-color:#fff; width:43%; border-radius:10px; }
+#main .section7 .wrap .road_year .map_left .map_03 h3 { font-size:20px; font-weight:200; color:#0d417e; float:right; padding:30px 40px; }
+#main .section7 .wrap .road_year .map_left .map_03 h3 span { font-size:30px; font-weight:700; color:#000; }
+#main .section7 .wrap .road_year .map_left .map_03 ul { padding:30px 0; }
+#main .section7 .wrap .road_year .map_left .map_03 ul li { font-size:20px; font-weight:200; color:#0d417e; text-align:right; }
+#main .section7 .wrap .road_year .map_left .map_03 ul.mobile_map { display:none; }
+#main .section7 .wrap .road_year .map_left .map_03 ul.mobile_map li { font-size:20px; font-weight:200; color:#0d417e; text-align:left; }
+#main .section7 .wrap .road_year .map_left .mal_arrow3 { float:left; line-height:147px; }
+#main .section7 .wrap .road_year .map_left .mal_arrow3 img { vertical-align:middle ; }
+#main .section7 .wrap .road_year .map_right .mal_arrow4 { float:left; line-height:138px; }
+#main .section7 .wrap .road_year .map_right .mal_arrow4 img { vertical-align:middle; }
+#main .section7 .wrap .road_year .map_right .map_04 { float:left; background-color:#fff; width:43%; border-radius:10px; }
+#main .section7 .wrap .road_year .map_right .map_04 h3 { font-size:20px; font-weight:200; color:#0d417e; float:left; padding:30px 40px; }
+#main .section7 .wrap .road_year .map_right .map_04 h3 span { font-size:30px; font-weight:700; color:#000; }
+#main .section7 .wrap .road_year .map_right .map_04 ul { padding:40px 0; }
+#main .section7 .wrap .road_year .map_right .map_04 ul li { font-size:20px; font-weight:200; color:#0d417e; text-align:left; }
+#main .section7 .wrap .road_year .map_left .map_05 { float:left; background-color:#fff; width:43%; border-radius:10px; }
+#main .section7 .wrap .road_year .map_left .map_05 h3 { font-size:20px; font-weight:200; color:#0d417e; float:right; padding:30px 40px; }
+#main .section7 .wrap .road_year .map_left .map_05 h3 span { font-size:30px; font-weight:700; color:#000; }
+#main .section7 .wrap .road_year .map_left .map_05 ul { padding:53px 0; }
+#main .section7 .wrap .road_year .map_left .map_05 ul li { font-size:20px; font-weight:200; color:#0d417e; text-align:right; }
+#main .section7 .wrap .road_year .map_left .map_05 ul.mobile_map { display:none; }
+#main .section7 .wrap .road_year .map_left .map_05 ul.mobile_map li { font-size:20px; font-weight:200; color:#0d417e; text-align:left; }
+#main .section7 .wrap .road_year .map_left .mal_arrow5 { float:left; line-height:147px; }
+#main .section7 .wrap .road_year .map_left .mal_arrow5 img { vertical-align:middle ; }
+
+/* sec8 */
+#main .section8 .wrap h1 { font-size:30px; color:#0d417e; font-weight:400; padding:160px 0 40px 0; text-align:center; }
+#main .section8 .wrap h1 span { font-family:'YJD'; font-size:60px; }
+#main .section8 .wrap .sm { margin-bottom:160px; }
+#main .section8 .wrap .swiper-container { background-color:#f8f8f8; }
+#main .section8 .wrap .swiper-container .swiper_width { margin:0 auto; }
+#main .section8 .wrap .swiper-container .swiper-wrapper .swiper-slide { line-height:219px; width:25%; }
+#main .section8 .wrap .swiper-container .swiper-wrapper .swiper-slide img { vertical-align:middle; }
+
+/* sec9 */
+#main .section9 .wrap>h1 { font-size:30px; color:#fff; font-weight:400; padding:160px 0 40px 0; }
+#main .section9 .wrap>h1>span { font-family:'YJD'; font-size:60px; }
+#main .section9 .wrap .adv { overflow:hidden; width:100%; border-bottom:1px solid #fff; padding-top:30px; }
+#main .section9 .wrap .left img { width:160px; float:left; padding:0 20px 30px 0; }
+#main .section9 .wrap .right img { width:160px; float:left; padding:0 0 30px 20px; }
+#main .section9 .wrap .last { border-bottom:none; padding-bottom:130px; }
+/* #main .section9 .wrap .advisor_list .left img { height:150px !important; float:left; margin:0 20px 20px 0; } */
+#main .section9 .wrap .advisor_list .left h1 { font-weight:500; font-size:25px; color:#fff; border-bottom:4px solid #fff; float:left; padding-bottom:10px; }
+#main .section9 .wrap .advisor_list .left p { font-size:20px; color:#fff; font-weight:200; float:left; padding-left:30px; padding-bottom:30px; width:65%; }
+#main .section9 .wrap .advisor_list .right .fr { float:right; }
+#main .section9 .wrap .advisor_list .right .fr .right01 { width:calc(100% - 322px); }
+/* #main .section9 .wrap .advisor_list .right img { height:150px !important; float:right; margin:0 0 20px 20px; } */
+#main .section9 .wrap .advisor_list .right h1 { font-weight:500; font-size:25px; color:#fff; border-bottom:4px solid #fff; float:left; padding-bottom:10px; }
+#main .section9 .wrap .advisor_list .right p { font-size:20px; color:#fff; font-weight:200; float:left; padding-right:30px; padding-bottom:30px;  }
+
+/* sec10 */
+#main .section10 {  }
+#main .section10 form { overflow:hidden; }
+#main .section10 h1 { font-size:30px; color:#0d417e; font-weight:400; padding:160px 0 40px 0; text-align:center; }
+#main .section10 h1 span { font-family:'YJD'; font-size:60px; }
+
+#main .section10 img { height:200px !important; margin:100px 0 0; }
+#main .section10 .div { padding:50px 0 150px; overflow:hidden; }
+#main .section10 .form { float:right; width:calc(100% - 532px); max-width:640px; }
+#main .section10 .form input { width:48%; float:left; height:50px; padding:0 0 0 12px; box-sizing:border-box; font-size:17px; border:1px solid #ccc; }
+#main .section10 .form input.first { margin:0 4% 0 0; }
+#main .section10 .form textarea { width:100%; height:250px; margin:15px 0; padding:12px; box-sizing:border-box; font-size:17px; overflow-y:auto; border:1px solid #ccc; }
+#main .section10 .form button { line-height:55px; width:100%; display:block; font-size:20px; background-color:#0d417e; color:#fff; }
+
+
+/* foot */
+#footer { position:relative; background-color:#333333; text-align:center; color:#fff; font-size:25px; font-weight:200; padding:90px 0; }
+
+/* 플로팅버튼 */
+.float_btn { position:fixed; z-index:5; bottom:50px; right:40px; transition:all .4s; }
+.float_btn.on { position:fixed; bottom:267px; z-index:10; }
+.float_btn ul li { padding:10px; }
+
+@media screen and (max-width:1712px) {
+  #header .h_logo { padding:0 50px; }
+  #header .h_logo img { width:120px; }
+  #header .h_menu ul li { padding:0px 9px; }
+  #header .h_menu ul li a { font-size:17px; }
+  #header .h_lang { padding:0 50px 0 0; }
+  #header .h_lang ul li a { font-size:16px; }
+
+  #main .section1 .wrap .sec1_left { width:38%; padding:260px 0 100px 20px; }
+  #main .section1 .wrap .sec1_right { width:58%; padding:220px 20px 100px 0; }
+  #main .section1 .wrap .sec1_right .video-container iframe { width:100%; }
+  #main .section1 .wrap .sec1_left a.download { max-width:430px; }
+
+  #main .section2 .wrap .sec2_left { width:38%; padding:140px 0 0 20px; }
+  #main .section2 .wrap .sec2_left img { padding:240px 0 0 90px; width:200px; }
+  #main .section2 .wrap .sec2_left h1 span { font-size:50px; }
+  #main .section2 .wrap .sec2_right { width:58%; padding:140px 20px 70px 0; }
+  #main .section2 .wrap .sec2_right ul li { width:auto; }
+  #main .section2 .wrap .sec2_right ul li img { width:120px; }
+  #main .section2 .wrap .sec2_right ul li img.sec2_line { padding:25px 40px; }
+  #main .section2 .wrap .sec2_right ul li img.sec2_line2 { padding:20px 40px; }
+  #main .section2 .wrap .sec2_right ul li .sec2_txt h2 { font-size:25px; }
+  #main .section2 .wrap .sec2_right ul li .sec2_txt p { font-size:20px; }
+
+  #main .section3 .wrap .sec3_left { width:28%; padding:140px 0 0 20px; }
+  #main .section3 .wrap .sec3_left h1 span { font-size:50px; }
+  #main .section3 .wrap .sec3_left .serv_3 { width:75%; margin:80px 0 0 0; }
+  #main .section3 .wrap .sec3_left .serv_3 h2 { font-size:25px; padding:30px 0 30px 0; }
+  #main .section3 .wrap .sec3_right { width:70%; padding:140px 0 70px 0; }
+  #main .section3 .wrap .sec3_right ul li { width:30.33%; }
+  #main .section3 .wrap .sec3_right ul li p { font-size:17px; }
+
+  #main .section4 .wrap h1 { padding:140px 0 30px 20px; }
+  #main .section4 .wrap h1 span { font-size:50px; }
+  #main .section4 .wrap .sec4_left { width:38%; padding:0 0 80px 20px; }
+  #main .section4 .wrap .sec4_right { width:50%; padding:0 20px 0 0; }
+  #main .section4 .wrap .sec4_right ul li span { font-size:25px; }
+  #main .section4 .wrap .sec4_right ul li p { font-size:20px; }
+
+  #main .section5 .wrap h1 { padding:140px 0 40px 0; }
+  #main .section5 .wrap h1 span { font-size:50px; }
+  #main .section5 .wrap .sec5_txt { margin:0 20px 160px 20px; }
+  #main .section5 .wrap .sec5_txt p { font-size:20px; line-height:30px; padding:40px 20px; }
+
+  .sec6_bg { margin:-52px 0 0 0; }
+  #main .section6 .wrap h1 { padding:60px 0 0 0; }
+  #main .section6 .wrap h1 span { font-size:50px; }
+  #main .section6 .wrap .sec6_txt { margin:40px 20px 60px; }
+  #main .section6 .wrap .sec6_txt ul { width:890px; }
+  #main .section6 .wrap .sec6_txt ul li p { font-size:25px; padding:40px 0; width:820px; }
+  #main .section6 .wrap .sec6_txt ul li.sen_right img { width:25px; margin:100px 0 0 10px; }
+  #main .section6 .wrap .sec6_txt ul li.sen_left img { width:25px; margin:30px 10px 0 0; }
+  #main .section6 .wrap .sec6_list ul li { width:33.3%; padding:0; }
+  #main .section6 .wrap .sec6_list ul li p { font-size:20px; line-height:30px; }
+  #main .section6 .wrap .sec6_more ul li { width:45%; margin:0 2.5%; padding:30px; box-sizing:border-box; }
+  #main .section6 .wrap .sec6_more ul li.more2 { padding:30px; }
+  #main .section6 .wrap .sec6_more ul li .more_txt { padding:0 0 20px 0; }
+  #main .section6 .wrap .sec6_more ul li .more_txt h2 { font-size:30px; }
+  #main .section6 .wrap .sec6_more ul li .more_txt img { margin:7px 15px 0 0; }
+  #main .section6 .wrap .sec6_more ul li p { font-size:20px; }
+
+  #main .section7 .wrap h1 { padding:140px 0 40px 20px; }
+  #main .section7 .wrap .road_year { padding:0 0 80px 0; }
+  #main .section7 .wrap .road_year .map_left { margin:0 0 0 20px; }
+  #main .section7 .wrap .road_year .map_right { margin:0 20px 0 0; }
+  #main .section7 .wrap .year_center { height:72%; }
+
+  #main .section8 .wrap { width:auto; margin:0 20px; text-align:center; }
+  #main .section8 .wrap h1 span { font-size:50px; }
+  #main .section8 .wrap h1 { padding:140px 0 40px 0; }
+  #main .section8 .wrap .swiper-container .swiper-wrapper .swiper-slide img { padding:0; }
+
+  #main .section9 .wrap>h1 { padding:140px 0 40px 20px; }
+  #main .section9 .wrap>h1>span { font-size:50px; }
+  #main .section9 .wrap .advisor_list { padding:0 20px; }
+
+  #footer { padding:50px 0; font-size:15px; }
+
+  .float_btn.on { bottom:157px; }
+
+}
+@media screen and (max-width:1180px) {
+  #main .section8 .wrap .swiper-container .swiper_width { width:auto; }
+}
+@media screen and (max-width:1250px) {
+
+  #header .m_btn { display:block; }
+  #header .h_menu { display:none; }
+  #header .h_lang { display:none; }
+  #header .h_logo { padding:0 30px; line-height:45px; }
+  #header .h_logo img { width:80px; }
+
+  #main .section1 .wrap .sec1_left { padding:180px 0 100px 20px; }
+  #main .section1 .wrap .sec1_left>img { width:260px; padding:0 0 20px 0; }
+  #main .section1 .wrap .sec1_left ul li { padding:0 10px 0 0; }
+  #main .section1 .wrap .sec1_left ul li a img { width:45px; }
+  #main .section1 .wrap .sec1_right { width:56%; padding:150px 20px 100px 0; }
+  #main .section1 .wrap .sec1_right .video-container iframe { height:300px; }
+  #main .section1 .wrap .sec1_left a.download { max-width:260px; font-size:19px; }
+
+  #main .section2 .wrap .sec2_left { width:100%; float:initial; padding:80px 0 0 20px; }
+  #main .section2 .wrap .sec2_left h1 { font-size:20px; }
+  #main .section2 .wrap .sec2_left h1 span { font-size:40px; }
+  #main .section2 .wrap .sec2_left img { display:none; }
+  #main .section2 .wrap .sec2_right { float:initial; width:100%; padding:50px 20px; box-sizing:border-box; }
+
+  #main .section3 .wrap .sec3_left { padding:100px 20px 0 20px; float:initial; width:100%; }
+  #main .section3 .wrap .sec3_left .serv_3 { display:none; }
+  #main .section3 .wrap .sec3_left h1 { font-size:20px; }
+  #main .section3 .wrap .sec3_left h1 span { font-size:40px; }
+  #main .section3 .wrap .sec3_right { float:initial; width:100%; padding:40px 20px; overflow:hidden; box-sizing:border-box; }
+  #main .section3 .wrap .sec3_right ul li { padding:0 2%; width:29.33%; }
+  #main .section3 .wrap .sec3_right ul li p { padding:20px 10px; max-width:299px; margin:0 auto; }
+
+  #main .section4 .wrap h1 { padding:100px 0 30px 20px; font-size:20px; }
+  #main .section4 .wrap h1 span { font-size:40px; }
+  #main .section4 .wrap .sec4_left { float:initial; width:60%; margin:0 auto; padding:0 20px 40px; }
+  #main .section4 .wrap .sec4_right { float:initial; width:100%; padding:0 20px; }
+  #main .section4 .wrap .sec4_right ul li { padding:0 0 20px 0; }
+  #main .section4 .wrap .sec4_right ul li p { word-break:keep-all; }
+  #main .section4 .wrap .sec4_right ul li p br { display:none; }
+
+  #main .section5 .wrap h1 { padding:100px 0 30px 0; font-size:20px; }
+  #main .section5 .wrap h1 span { font-size:40px; }
+  #main .section5 .wrap .sec5_txt { margin:0 20px 105px 20px; }
+  #main .section5 .wrap .sec5_txt p { padding:30px 5px; font-size:15px; line-height:25px; word-break:keep-all; }
+
+  #main .section6 .wrap h1 { padding:50px 0 30px; font-size:20px; }
+  #main .section6 .wrap h1 span { font-size:40px; }
+  #main .section6 .wrap .sec6_txt { margin:0 20px 30px; }
+  #main .section6 .wrap .sec6_txt ul { width:640px; }
+  #main .section6 .wrap .sec6_txt ul li p { font-size:18px; width:590px; }
+  #main .section6 .wrap .sec6_txt ul li.sen_left img { width:15px; }
+  #main .section6 .wrap .sec6_txt ul li.sen_right img { width:15px; margin:90px 0 0 10px; }
+  #main .section6 .wrap .sec6_list ul { width:100%; }
+  #main .section6 .wrap .sec6_list ul li img { width:150px; padding:0 0 10px; }
+  #main .section6 .wrap .sec6_more { padding:0 0 50px 0; }
+  #main .section6 .wrap .sec6_more ul li { width:95%; float:initial; margin:0 auto 20px; }
+  #main .section6 .wrap .sec6_more ul li p { font-size:18px; word-break:keep-all; }
+  #main .section6 .wrap .sec6_more ul li p br { display:none; }
+
+  #main .section7 .wrap .year_center { display:none; }
+  #main .section7 .wrap .year_center2 { display:none; }
+  #main .section7 .wrap .road_year .map_left { margin:0 0 10px; }
+  #main .section7 .wrap .road_year .map_left .mal_arrow { display:none; }
+  #main .section7 .wrap .road_year .map_left .mal_arrow3 { display:none; }
+  #main .section7 .wrap .road_year .map_left .mal_arrow5 { display:none; }
+  #main .section7 .wrap .road_year .map_right { margin:10px 0; left:0; float:initial; overflow:hidden; }
+  #main .section7 .wrap .road_year .map_right .mal_arrow2 { display:none; }
+  #main .section7 .wrap .road_year .map_right .mal_arrow4 { display:none; }
+  #main .section7 .wrap .road_year .map_left .map_01 { width:94%; margin:0 auto; float:none; }
+  #main .section7 .wrap .road_year .map_left .map_01 h3 { float:left; }
+  #main .section7 .wrap .road_year .map_left .map_03 h3 { float:left; }
+  #main .section7 .wrap .road_year .map_left .map_05 h3 { float:left; }
+  #main .section7 .wrap .road_year .map_left .map_01 ul { display:none; }
+  #main .section7 .wrap .road_year .map_left .map_01 ul li { text-align:left; }
+  #main .section7 .wrap .road_year .map_left .map_01 ul.mobile_map { display:block; }
+  #main .section7 .wrap .road_year .map_left .map_03 ul { display:none; }
+  #main .section7 .wrap .road_year .map_left .map_03 ul li { text-align:left; }
+  #main .section7 .wrap .road_year .map_left .map_03 ul.mobile_map { display:block; }
+  #main .section7 .wrap .road_year .map_left .map_05 ul { display:none; }
+  #main .section7 .wrap .road_year .map_left .map_05 ul li { text-align:left; }
+  #main .section7 .wrap .road_year .map_left .map_05 ul.mobile_map { display:block; }
+  #main .section7 .wrap .road_year .map_left .map_03 { width:94%; float:none; margin:0 auto; }
+  #main .section7 .wrap .road_year .map_left .map_05 { width:94%; float:none; margin:0 auto;}
+  #main .section7 .wrap .road_year .map_right .map_02 { width:94%; }
+  #main .section7 .wrap .road_year .map_right .map_04 { width:94%; margin:0 auto; float:none; }
+
+  #main .section8 .wrap h1 { padding:100px 0 30px; font-size:20px; }
+  #main .section8 .wrap h1 span { font-size:40px; }
+  #main .section8 .wrap .sm .swiper-container { height:140px; }
+  #main .section8 .wrap .swiper-container .swiper-wrapper .swiper-slide { line-height:140px; }
+
+  #main .section9 .wrap>h1 { font-size:20px; padding:100px 0 30px 20px; }
+  #main .section9 .wrap>h1>span { font-size:40px; }
+  #main .section9 .wrap .advisor_list .left h1 { font-size:20px; }
+  #main .section9 .wrap .advisor_list .left p { font-size:15px; width:58%; }
+  #main .section9 .wrap .advisor_list .right h1 { font-size:20px; }
+  #main .section9 .wrap .advisor_list .right p { font-size:15px; width:270px; }
+  #main .section9 .wrap .advisor_list .left .pho_txt p { width:calc(100% - 340px); }
+  #main .section9 .wrap .advisor_list .photo p { width:calc(100% - 336px); }
+  #main .section9 .wrap .advisor_list .photo .fr .right02 { width:calc(100% - 375px); }
+
+  #main .section10 .div { padding:50px 30px 150px; box-sizing:border-box; }
+  #main .section10 img { height:120px !important; }
+  #main .section10 .form { width:calc(100% - 347px); }
+
+}
+@media screen and (max-width:769px) {
+  #main .section1 .wrap .sec1_left { float:initial; width:275px; margin:0 auto; padding:100px 0 30px; }
+  #main .section1 .wrap .sec1_right { width:100%; padding:0 20px 20px; box-sizing:border-box; }
+  #main .section1 .wrap .sec1_left a.download { width:100%; max-width:100%; font-size:17px; }
+  #main .section1 .wrap .scroll img { width:20px; }
+  #main .section1 .wrap .scroll p { font-size:15px; }
+
+  #main .section2 .wrap .sec2_left { padding:100px 0 0 20px; }
+  #main .section2 .wrap .sec2_right ul li { margin:0 0 10px 0; }
+  #main .section2 .wrap .sec2_right ul li img { width:80px; padding:74px 40px; }
+  #main .section2 .wrap .sec2_right ul li img.sec2_line { padding:78px 40px; }
+  #main .section2 .wrap .sec2_right ul li img.sec2_line2 { padding:74px 40px; }
+  #main .section2 .wrap .sec2_right ul li img.sec2_line3 { padding:40px; }
+
+  #main .section3 .wrap .sec3_right { padding:30px 20px 50px; }
+  #main .section3 .wrap .sec3_right ul li p { font-size:12px; padding:10px 0; }
+
+  #main .section4 .wrap .sec4_right ul li span { font-size:20px; width:138px; }
+  #main .section4 .wrap .sec4_right ul li p { margin:-3px 0 0 10px; font-size:15px; line-height:20px; }
+
+  .sec6_bg { margin:-42px 0 0 0; }
+
+  #main .section6 .wrap .sec6_txt ul { width:360px; }
+  #main .section6 .wrap .sec6_txt ul li p { font-size:15px; width:310px; text-align:center; }
+  #main .section6 .wrap .sec6_list ul li p { font-size:15px; line-height:20px; word-break:keep-all; }
+  #main .section6 .wrap .sec6_list ul li img { width:100px; }
+  #main .section6 .wrap .sec6_more { padding:0 0 40px 0; }
+  #main .section6 .wrap .sec6_more ul li .more_txt { padding:0 0 10px 0; }
+
+  #main .section7 .wrap .year_center { display:none; }
+  #main .section7 .wrap .year_center2 { display:none; }
+  /* #main .section7 .wrap .road_year .map_left { margin:10px 20px; } */
+  #main .section7 .wrap .road_year .map_left .mal_arrow { display:none; }
+  #main .section7 .wrap .road_year .map_left .mal_arrow3 { display:none; }
+  #main .section7 .wrap .road_year .map_left .mal_arrow5 { display:none; }
+  #main .section7 .wrap .road_year .map_right { left:0; float:initial; }
+  #main .section7 .wrap .road_year .map_right .mal_arrow2 { display:none; }
+  #main .section7 .wrap .road_year .map_right .mal_arrow4 { display:none; }
+  #main .section7 .wrap .road_year .map_left .map_01 h3 { float:left; }
+  #main .section7 .wrap .road_year .map_left .map_03 h3 { float:left; }
+  #main .section7 .wrap .road_year .map_left .map_05 h3 { float:left; }
+  #main .section7 .wrap .road_year .map_left .map_01 ul { display:none; }
+  #main .section7 .wrap .road_year .map_left .map_01 ul li { text-align:left; }
+  #main .section7 .wrap .road_year .map_left .map_01 ul.mobile_map { display:block; }
+  #main .section7 .wrap .road_year .map_left .map_03 ul { display:none; }
+  #main .section7 .wrap .road_year .map_left .map_03 ul li { text-align:left; }
+  #main .section7 .wrap .road_year .map_left .map_03 ul.mobile_map { display:block; }
+  #main .section7 .wrap .road_year .map_left .map_05 ul { display:none; }
+  #main .section7 .wrap .road_year .map_left .map_05 ul li { text-align:left; }
+  #main .section7 .wrap .road_year .map_left .map_05 ul.mobile_map { display:block; }
+  /* #main .section7 .wrap .road_year .map_left .map_03 { width:92%; }
+  #main .section7 .wrap .road_year .map_left .map_05 { width:92%; }
+  #main .section7 .wrap .road_year .map_right .map_02 { width:92%; }
+  #main .section7 .wrap .road_year .map_right .map_04 { width:92%; } */
+
+  #main .section8 .wrap .swiper-container .swiper-wrapper .swiper-slide { width:50%; }
+
+  #main .section9 .wrap .left img { width:120px; }
+  #main .section9 .wrap .right img { width:120px; }
+  #main .section9 .wrap .advisor_list .left .pho_txt p { width:calc(100% - 300px); }
+  #main .section9 .wrap .advisor_list .right .fr .right01 { width:calc(100% - 260px); }
+  #main .section9 .wrap .advisor_list .photo p { width:calc(100% - 276px); }
+  #main .section9 .wrap .advisor_list .photo .fr .right02 { width:calc(100% - 315px); }
+  /* #main .section9 .wrap .advisor_list .left img { height:90px !important; float:left; margin:0 20px 20px 0; }
+  #main .section9 .wrap .advisor_list .right img { height:90px !important; float:right; margin:0 0 20px 20px; } */
+
+  .float_btn  { right:20px; bottom:20px; }
+  .float_btn.on { bottom:142px; }
+  .float_btn ul li { padding:5px; }
+
+  #main .section10 .div { padding:10px 30px 50px; box-sizing:border-box; }
+  #main .section10 img { display:none; }
+  #main .section10 .form { width:100%; }
+  #main .section10 h1 { font-size:19px; padding:80px 0 40px 0; }
+  #main .section10 h1 span { font-size:40px; }
+
+  /* #main .section9 .wrap .adv.photo { padding:120px 0 0; position:relative; }
+  #main .section9 .wrap .adv.right img { left:auto; right:0; }
+  #main .section9 .wrap .advisor_list img { position:absolute; top:20px; left:0;  } */
+}
+@media screen and (max-width:500px) {
+  #header .h_logo { padding:0 20px; }
+  #header .m_btn  { padding:0 20px; }
+
+  #main .section2 .wrap .sec2_left  { padding:80px 0 0 20px; }
+  #main .section2 .wrap .sec2_left h1 span { font-size:30px; }
+  #main .section2 .wrap .sec2_right ul li { text-align:center; }
+  #main .section2 .wrap .sec2_right ul li img { padding:20px 0 0; margin:0 auto; float:initial; }
+  #main .section2 .wrap .sec2_right ul li img.sec2_line { padding:20px 0 0; }
+  #main .section2 .wrap .sec2_right ul li img.sec2_line2 { padding:20px 0 0; }
+  #main .section2 .wrap .sec2_right ul li img.sec2_line3 { padding:20px 0 0; }
+  #main .section2 .wrap .sec2_right ul li .sec2_txt { float:initial; width:100%; }
+  #main .section2 .wrap .sec2_right ul li .sec2_txt h2 { font-size:20px; }
+  #main .section2 .wrap .sec2_right ul li .sec2_txt p { font-size:15px; }
+
+  #main .section3 .wrap .sec3_left { padding:80px 20px 0 20px; }
+  #main .section3 .wrap .sec3_left h1 span { font-size:30px; }
+  #main .section3 .wrap .sec3_right { padding:30px 0 40px; }
+  #main .section3 .wrap .sec3_right ul li { padding:0 0 10px; width:260px; margin:0 auto; float:initial; }
+
+  #main .section4 .wrap h1 { padding:80px 0 20px 20px; }
+  #main .section4 .wrap h1 span { font-size:30px; }
+  #main .section4 .wrap .sec4_left { padding:0 20px 30px; }
+  #main .section4 .wrap .sec4_right ul li p { width:60%; margin:-3px 20px 0 10px }
+  #main .section4 .wrap .sec4_right ul li span { font-size:14px; width:90px; }
+
+  #main .section5 .wrap h1 { padding:80px 0 30px 0; }
+  #main .section5 .wrap h1 span { font-size:30px; }
+  #main .section5 .wrap .sec5_txt { margin:0 20px 70px 20px; }
+
+  #main .section6 .wrap h1 span { font-size:30px; }
+  #main .section6 .wrap .sec6_txt ul { width:230px; }
+  #main .section6 .wrap .sec6_txt ul li.sen_right img { margin:150px 0 0 10px; }
+  #main .section6 .wrap .sec6_txt ul li p { width:175px; }
+  #main .section6 .wrap .sec6_more ul li .more_txt h2 { font-size:20px; word-break:keep-all; }
+  #main .section6 .wrap .sec6_more ul li .more_txt img { width:18px; }
+  #main .section6 .wrap .sec6_more ul li { width:90%; }
+
+  .sec6_bg { margin:-25px 0 0 0; }
+
+  #main .section7 .wrap h1 { font-size:20px; padding:80px 0 40px 20px; }
+  #main .section7 .wrap h1 span { font-size:30px; }
+  #main .section7 .wrap .road_year .map_left .map_01 { width:87%; }
+  #main .section7 .wrap .road_year .map_left .map_01 h3 { padding:30px 20px; }
+  #main .section7 .wrap .road_year .map_left .map_01 ul.mobile_map li { font-size:16px; }
+  #main .section7 .wrap .road_year .map_left .map_03 { width:87%; }
+  #main .section7 .wrap .road_year .map_left .map_03 h3 { padding:28px 20px; }
+  #main .section7 .wrap .road_year .map_left .map_03 ul.mobile_map li { font-size:16px; }
+  #main .section7 .wrap .road_year .map_left .map_05 { width:87%; }
+  #main .section7 .wrap .road_year .map_left .map_05 h3 { padding:30px 20px; }
+  #main .section7 .wrap .road_year .map_left .map_05 ul.mobile_map li { font-size:16px; }
+  #main .section7 .wrap .road_year .map_right .map_02 { width:87%; }
+  #main .section7 .wrap .road_year .map_right .map_02 h3 { padding:41px 20px; }
+  #main .section7 .wrap .road_year .map_right .map_02 ul li { font-size:16px; }
+  #main .section7 .wrap .road_year .map_right .map_04 { width:87%; }
+  #main .section7 .wrap .road_year .map_right .map_04 h3 { padding:30px 20px; }
+  #main .section7 .wrap .road_year .map_right .map_04 ul li { font-size:16px; }
+
+  #main .section8 .wrap { height:275px; }
+  #main .section8 .wrap h1 {  padding:80px 0 20px; }
+  #main .section8 .wrap h1 span { font-size:30px; }
+  #main .section8 .wrap .sm .swiper-container { height:auto; }
+  #main .section8 .wrap .swiper-container .swiper-wrapper .swiper-slide { line-height:50px; margin:0 auto; }
+
+  #main .section9 .wrap>h1 { padding:80px 0 0px 20px; font-size:20px; }
+  #main .section9 .wrap>h1>span { font-size:30px; }
+  #main .section9 .wrap .advisor_list .left h1 { font-size:15px; }
+  #main .section9 .wrap .advisor_list .left p { width:55%; font-size:13px; padding-left:15px; }
+  #main .section9 .wrap .advisor_list .right h1 { font-size:15px; float:right; }
+  #main .section9 .wrap .advisor_list .right p { width:calc( 100% - 150px ); font-size:13px; padding-right:15px; }
+  #main .section9 .wrap .advisor_list .right p.right01 { width:calc(100% - 96px); }
+  #main .section9 .wrap .advisor_list .right h1.right_01 { width:66px; float:left; }
+  #main .section9 .wrap .advisor_list .right p.right02 { width:calc(100% - 124px); }
+  #main .section9 .wrap .advisor_list .right h1.right_02 { width:109px; float:left; }
+  #main .section9 .wrap .advisor_list .right p.right03 { width:calc(100% - 96px); }
+  #main .section9 .wrap .advisor_list .right h1.right_03 { width:81px; }
+  #main .section9 .wrap .advisor_list .right p.right04 { width:calc(100% - 118px); }
+  #main .section9 .wrap .advisor_list .right h1.right_04 { width:103px; }
+  #main .section9 .wrap .advisor_list .right p.right05 { width:calc(100% - 127px); }
+  #main .section9 .wrap .advisor_list .right h1.right_05 { width:112px; }
+  #main .section9 .wrap .advisor_list .right p.right06 { width:calc(100% - 94px); }
+  #main .section9 .wrap .advisor_list .right h1.right_06 { width:79px; }
+  #main .section9 .wrap .last { padding-bottom:60px; }
+
+  #main .section9 .wrap .left img { width:70px; padding:0 15px 30px 0; }
+  #main .section9 .wrap .right img { width:70px; padding:0 0 30px 15px; }
+  #main .section9 .wrap .advisor_list .left .pho_txt p { width:calc(100% - 300px); }
+  #main .section9 .wrap .advisor_list .right .fr .right01 { width:calc(100% - 166px); }
+  #main .section9 .wrap .advisor_list .photo p { width:calc(100% - 276px); }
+  #main .section9 .wrap .advisor_list .photo .fr .right02 { width:calc(100% - 209px); }
+
+
+
+  #footer { font-size:10px; padding:30px 0; }
+
+  .float_btn ul li img { width:40px; }
+  .float_btn.on { bottom:102px; }
+
+  #main .section10 h1 span { font-size:30px; }
+
+}

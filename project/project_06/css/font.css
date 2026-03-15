@@ -1,0 +1,98 @@
+/* 나눔 */
+@font-face {
+  font-family: 'nanumspuare';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./font/NanumSquareL.ttf') format('truetype'),
+      url('./font/NanumSquareL.otf') format('opentype'),
+      url('./font/NanumSquareL.woff') format('woff'),
+      url('./font/NanumSquareOTF_acL.otf') format('opentype');
+}
+@font-face {
+  font-family: 'nanumspuare';
+  font-style: normal;
+  font-weight: 200;
+  src:url('./font/NanumSquareL.ttf') format('truetype'),
+      url('./font/NanumSquareL.otf') format('opentype'),
+      url('./font/NanumSquareL.woff') format('woff'),
+      url('./font/NanumSquareOTF_acL.otf') format('opentype');
+}
+@font-face {
+  font-family: 'nanumspuare';
+  font-style: normal;
+  font-weight: 300;
+  src:url('./font/NanumSquareL.ttf') format('truetype'),
+      url('./font/NanumSquareL.otf') format('opentype'),
+      url('./font/NanumSquareL.woff') format('woff'),
+      url('./font/NanumSquareOTF_acL.otf') format('opentype');
+}
+@font-face {
+  font-family: 'nanumspuare';
+  font-style: normal;
+  font-weight: 400;
+  src:url('./font/NanumSquareR.ttf') format('truetype'),
+      url('./font/NanumSquareR.otf') format('opentype'),
+      url('./font/NanumSquareR.woff') format('woff'),
+      url('./font/NanumSquareOTF_acR.otf') format('opentype');
+}
+@font-face {
+  font-family: 'nanumspuare';
+  font-style: normal;
+  font-weight: 500;
+  src:url('./font/NanumSquareR.ttf') format('truetype'),
+      url('./font/NanumSquareR.otf') format('opentype'),
+      url('./font/NanumSquareR.woff') format('woff'),
+      url('./font/NanumSquareOTF_acR.otf') format('opentype');
+}
+@font-face {
+  font-family: 'nanumspuare';
+  font-style: normal;
+  font-weight: 600;
+  src:url('./font/NanumSquareB.ttf') format('truetype'),
+      url('./font/NanumSquareB.otf') format('opentype'),
+      url('./font/NanumSquareB.woff') format('woff'),
+      url('./font/NanumSquareOTF_acB.otf') format('opentype');
+}
+@font-face {
+  font-family: 'nanumspuare';
+  font-style: normal;
+  font-weight: 700;
+  src:url('./font/NanumSquareB.ttf') format('truetype'),
+      url('./font/NanumSquareB.otf') format('opentype'),
+      url('./font/NanumSquareB.woff') format('woff'),
+      url('./font/NanumSquareOTF_acB.otf') format('opentype');
+}
+@font-face {
+  font-family: 'nanumspuare';
+  font-style: normal;
+  font-weight: 700;
+  src:url('./font/NanumSquareEB.ttf') format('truetype'),
+      url('./font/NanumSquareEB.otf') format('opentype'),
+      url('./font/NanumSquareEB.woff') format('woff'),
+      url('./font/NanumSquareOTE_acEB.otf') format('opentype');
+}
+@font-face {
+  font-family: 'nanumspuare';
+  font-style: normal;
+  font-weight: 800;
+  src:url('./font/NanumSquareEB.ttf') format('truetype'),
+      url('./font/NanumSquareEB.otf') format('opentype'),
+      url('./font/NanumSquareEB.woff') format('woff'),
+      url('./font/NanumSquareOTE_acEB.otf') format('opentype');
+}
+@font-face {
+  font-family: 'nanumspuare';
+  font-style: normal;
+  font-weight: 900;
+  src:url('./font/NanumSquareEB.ttf') format('truetype'),
+      url('./font/NanumSquareEB.otf') format('opentype'),
+      url('./font/NanumSquareEB.woff') format('woff'),
+      url('./font/NanumSquareOTE_acEB.otf') format('opentype');
+}
+
+@font-face{src:url("font/Kyobo.ttf") format('truetype'); font-family:"Kyobo";}
+@font-face{src:url("font/Kyobo.otf") format('opentype'); font-family:"Kyobo";}
+@font-face{src:url("font/Kyobo.woff") format('woff'); font-family:"Kyobo";}
+@font-face{src:url("font/Cafe24Oneprettynight.ttf") format('truetype'); font-family:"prettynight";}
+@font-face{src:url("font/Cafe24Oneprettynight.otf") format('opentype'); font-family:"prettynight";}
+@font-face{src:url("font/Cafe24Oneprettynight.woff") format('woff'); font-family:"prettynight";}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WOOZOOMUSIC">
+  <meta property="og:description" content="WOOZOOMUSIC">
+  <meta property="og:image" content="img/favicon/og_img.png">
+  <meta property="og:url" content="">
+
+  <meta name="description" content="WOOZOOMUSIC" />
+  <meta name="keywords" content="WOOZOOMUSIC" />
+  <meta name="author" content="WOOZOOMUSIC" />
+
+  <title>WOOZOOMUSIC</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+</head>
+
+
+<body>
+  <div class="float_btn" id="float_btn">
+    <ul>
+      <li>
+        <a href="#"><img src="img/float_01.png" onmouseover="this.src='img/float_01_on.png'" onmouseout="this.src='img/float_01.png'"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/float_02.png" onmouseover="this.src='img/float_02_on.png'" onmouseout="this.src='img/float_02.png'"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/float_03.png" onmouseover="this.src='img/float_03_on.png'" onmouseout="this.src='img/float_03.png'"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/float_04.png" onmouseover="this.src='img/float_04_on.png'" onmouseout="this.src='img/float_04.png'"></a>
+      </li>
+    </ul>
+  </div>
+
+  <header id="header">
+    <div class="wrap">
+      <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+      <div class="mobile_menu_btn" id="open"><img src="img/menu_btn.png"></div>
+      <div class="mobile_back_btn" id="back"><img src="img/back_btn.png"></div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html#outline" target="_blank">OUTLINE</a></li>
+          <li><a href="index.html#platform" target="_blank">PLATFORM</a></li>
+          <li><a href="index.html#system" target="_blank">SYSTEM FLOW</a></li>
+          <li><a href="index.html#copyright" target="_blank">COPYRIGHT</a></li>
+          <li><a href="index.html#ntf_market" target="_blank">NFT MARKET</a></li>
+          <li><a href="index.html#loadmap" target="_blank">LOADMAP</a></li>
+          <li><a href="index.html#contactus" target="_blank">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="lang_nav">
+        <ul>
+          <li class="on"><a href="index.html">KO</a></li>
+          <li><a href="eng.html">EN</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    $(function(){
+      $(window).scroll(function(){
+        var num = $(this).scrollTop();
+        if( num > 1 ){
+          $("#header").addClass('on');
+        }else{
+          $("#header").removeClass('on');
+        }
+      });
+    });
+
+    $(function(){
+      $('#open').click(function() {
+        $('.nav, .lang_nav, .mobile_back_btn').addClass('on');
+      });
+      $('#back, #header .nav ul li').click(function() {
+        $('.nav, .lang_nav, .mobile_back_btn').removeClass('on');
+      });
+    });
+  </script>
+
+  <section id="main">
+    <article class="visual market">
+      <div class="wrap">
+        <div class="main_visual">
+          <div class="visual_tit scale-on-scroll">
+            <h1>Coming soon</h1>
+            <img src="img/loading.gif">
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <footer id="foot">
+    <div class="wrap">
+      <div class="foot_sns">
+        <ul>
+          <li><a href="#"><img src="img/sns_01.png"></a></li>
+          <li><a href="#"><img src="img/sns_02.png"></a></li>
+          <li><a href="#"><img src="img/sns_03.png"></a></li>
+          <li><a href="#"><img src="img/sns_04.png"></a></li>
+          <li><a href="#"><img src="img/sns_05.png"></a></li>
+        </ul>
+        <p>COPYRIGHT 2020 WOOZOOMUSIC INC. All RIGHTS RESERVED</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });
+
+  var swiper = new Swiper(".analy", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+
+  });
+
+  $(document).ready(function() {
+   $(window).scroll( function(){
+     $('.up-on-scroll').each( function(i){
+        var bottom_of_element = $(this).offset().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if( bottom_of_window > bottom_of_element ){
+           $(this).addClass('on')
+        } else {
+          $(this).removeClass('on')
+        }
+     });
+   });
+ });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.left-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.right-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.scale-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.rotate-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+   $(document).ready(function() {
+     $(window).scroll( function(){
+       $('.opacity-on-scroll').each( function(i){
+          var bottom_of_element = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if( bottom_of_window > bottom_of_element ){
+             $(this).addClass('on')
+          } else {
+            $(this).removeClass('on')
+          }
+       });
+     });
+   });
+
+  $(window).load(function(){
+    $('#outline .tit_top, #outline h1.white, .outline_cont .cont_txt, .outline_cont .cont_cont .cont_left, .outline_cont .cont_cont .cont_right, .visual_tit, .paper_btn').addClass('on');
+  });
+
+  $(function(){
+$(window).scroll(function(){
+  var num = $(this).scrollTop();
+  if( num > 500 ){
+    $("#float_btn").addClass('on');
+  }else{
+    $("#float_btn").removeClass('on');
+  }
+});
+});
+
+  $(function() {
+
+   var $w = $(window),
+     footerHei = $('footer').outerHeight(),
+     $banner = $('#float_btn');
+
+   $w.on('scroll', function() {
+
+     var sT = $w.scrollTop();
+     var val = $(document).height() - $w.height() - footerHei;
+
+     if (sT >= val)
+         $banner.addClass('plus')
+     else
+       $banner.removeClass('plus')
+
+   });
+
+  });
+
+</script>
+
+</html>
